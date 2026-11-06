@@ -45,8 +45,12 @@ python3 pstack.py show playbook bug-fix
 
 The catalogue is offline. Fetching the pinned source needs Git and network access. [Installation and host differences](docs/PSTACK.md).
 
+## A lesson from this launch
+
+The publishing agent found that a valid ZIP had lost the executable bits on original pstack scripts. It wrote a manual rule and incorporated it into the packer. The corrected release reconstructs both upstream Git trees from the final archive before publication. [Incident, cases and the agent-written rule](examples/launch-lesson/README.md).
+
 ## Release evidence
 
-Version **0.1.0**, public alpha. Run `python3 -m unittest discover -s tests -v` for local regression tests. The [verification record](docs/VERIFICATION.md) separates software results, illustrative cases and open research questions. A comparative productivity or model-quality multiplier would require matched live-agent trials.
+Version **0.1.1**, public alpha. Run `python3 -m unittest discover -s tests -v` for local regression tests. The [verification record](docs/VERIFICATION.md) separates software results, illustrative cases and open research questions. A comparative productivity or model-quality multiplier would require matched live-agent trials.
 
 Original Opsbook code is released under the [MIT licence](LICENSE). The separately fetched pstack distribution retains Lauren Tan's upstream licence and attribution.

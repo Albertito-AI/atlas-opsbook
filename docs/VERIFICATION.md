@@ -1,4 +1,4 @@
-# Verification record for 0.1.0
+# Verification record for 0.1.1
 
 Run the following at the root of a clean source checkout. The main suite and both demonstrations require Python's standard library only. Network access and Git are required for the separate upstream integration check.
 
@@ -23,3 +23,5 @@ The learner received four labelled practice cases. Four further public synthetic
 The [archive trial](../examples/package-trial-result.json) runs actual Python processes. Before learning, the empty manual selected zero commands. After promotion, the clean-import check exited 1 on a deliberately broken ZIP and exited 0 on the repaired one. The invocation uses isolated Python, a temporary archive and no external service.
 
 Live Cursor and Claude sessions, model judgement across unseen repositories, operator time, model cost and comparative productivity remain open for independent measurement. The [evaluation design](WHITEPAPER.md#how-to-test-a-larger-claim) describes an appropriate next experiment.
+
+The 0.1.1 packer reconstructs the two original Git trees from the combined ZIP and checks their hashes. A regression fixture tests both an executable and a symlink. See the [release incident](../examples/launch-lesson/README.md).

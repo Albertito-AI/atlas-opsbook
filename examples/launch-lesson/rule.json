@@ -1,0 +1,1 @@
+{"id":"verify-source-archive","when":{"task":"publish","delivery":"source-zip"},"check":"check-git-tree","instruction":"Before publishing a source ZIP, reconstruct each upstream Git tree from the archive entries and compare it to the pinned tree. Include paths, file bytes, executable modes and symbolic links.","basis":"opsbook-first-zip"}

@@ -1,0 +1,8 @@
+[
+ {"id":"opsbook-first-zip","set":"practice","context":{"task":"publish","delivery":"source-zip","project":"opsbook"},"expected":["check-git-tree"],"evidence":"Launch incident, 6 November 2026. The v0.1.0 packer created new ZIP entries without preserving Git mode 100755. The pinned pstack tree includes executable scripts."},
+ {"id":"guide-post","set":"practice","context":{"task":"publish","delivery":"html","project":"handbook"},"expected":[],"evidence":"Synthetic control. Publishing an HTML article creates no source ZIP."},
+ {"id":"zip-copy-edit","set":"practice","context":{"task":"describe","delivery":"source-zip","project":"catalogue"},"expected":[],"evidence":"Synthetic control. Editing its catalogue description creates no new archive."},
+ {"id":"separate-zip","set":"exam","context":{"task":"publish","delivery":"source-zip","project":"compiler"},"expected":["check-git-tree"],"evidence":"Synthetic replay. Shipping a compiler source ZIP must preserve the compiler scripts."},
+ {"id":"separate-post","set":"exam","context":{"task":"publish","delivery":"html","project":"journal"},"expected":[],"evidence":"Synthetic control. Publishing release notes produces no source archive."},
+ {"id":"separate-description","set":"exam","context":{"task":"describe","delivery":"source-zip","project":"tools"},"expected":[],"evidence":"Synthetic control. Describing an existing ZIP does not rebuild it."}
+]
