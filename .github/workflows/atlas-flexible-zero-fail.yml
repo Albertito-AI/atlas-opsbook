@@ -1,0 +1,21 @@
+name: Atlas Flexible Zero Fail
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: '47 1 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  actions: write
+  issues: write
+
+jobs:
+  atlas-zero-fail:
+    permissions:
+      contents: read
+      actions: write
+      issues: write
+    uses: Albertito-AI/Albertito-AI/.github/workflows/atlas-flexible-zero-fail.yml@main
