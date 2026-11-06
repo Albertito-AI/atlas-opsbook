@@ -25,3 +25,9 @@ The [archive trial](../examples/package-trial-result.json) runs actual Python pr
 Live Cursor and Claude sessions, model judgement across unseen repositories, operator time, model cost and comparative productivity remain open for independent measurement. The [evaluation design](WHITEPAPER.md#how-to-test-a-larger-claim) describes an appropriate next experiment.
 
 The 0.1.1 packer reconstructs the two original Git trees from the combined ZIP and checks their hashes. A regression fixture tests both an executable and a symlink. See the [release incident](../examples/launch-lesson/README.md).
+
+## Published download check
+
+On 6 November 2026 the publishing agent downloaded the ZIP and checksum from the public v0.1.1 release page. The ZIP matched SHA-256 `c17c3b4d43074c362a3728c85fe6c4ab42012f22f0ed70dea9dc07ae4397a5bf`. Reconstructing the pstack tree from the downloaded bytes returned `4719e1c4b4c43bac85d4206a8b41dd2899769c1c`. The Claude adapter returned `a38155ce0250f234b4099fbb2dee456741ea5fb1`. All 17 tests passed in the extracted distribution, and the extracted pull-request watcher had its executable bit.
+
+![The learned rule handles all four synthetic exam cases in the deployed casebook](casebook.jpg)
