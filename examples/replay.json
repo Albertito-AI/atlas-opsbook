@@ -1,0 +1,238 @@
+{
+  "rejected": {
+    "practice": {
+      "cases": 4,
+      "correct_before": 2,
+      "correct_after": 3,
+      "rows": [
+        {
+          "id": "import-failure",
+          "before": [],
+          "after": [
+            "install-clean"
+          ],
+          "expected": [
+            "install-clean"
+          ],
+          "fixed": [
+            "install-clean"
+          ],
+          "introduced": []
+        },
+        {
+          "id": "inspect-package",
+          "before": [],
+          "after": [],
+          "expected": [],
+          "fixed": [],
+          "introduced": []
+        },
+        {
+          "id": "missing-wheel",
+          "before": [],
+          "after": [
+            "install-clean"
+          ],
+          "expected": [
+            "install-clean"
+          ],
+          "fixed": [
+            "install-clean"
+          ],
+          "introduced": []
+        },
+        {
+          "id": "publish-guide",
+          "before": [],
+          "after": [
+            "install-clean"
+          ],
+          "expected": [],
+          "fixed": [],
+          "introduced": [
+            "install-clean"
+          ]
+        }
+      ]
+    },
+    "exam": {
+      "cases": 4,
+      "correct_before": 2,
+      "correct_after": 3,
+      "rows": [
+        {
+          "id": "bsd-wheel",
+          "before": [],
+          "after": [
+            "install-clean"
+          ],
+          "expected": [
+            "install-clean"
+          ],
+          "fixed": [
+            "install-clean"
+          ],
+          "introduced": []
+        },
+        {
+          "id": "macos-wheel",
+          "before": [],
+          "after": [
+            "install-clean"
+          ],
+          "expected": [
+            "install-clean"
+          ],
+          "fixed": [
+            "install-clean"
+          ],
+          "introduced": []
+        },
+        {
+          "id": "read-wheel",
+          "before": [],
+          "after": [],
+          "expected": [],
+          "fixed": [],
+          "introduced": []
+        },
+        {
+          "id": "release-notes",
+          "before": [],
+          "after": [
+            "install-clean"
+          ],
+          "expected": [],
+          "fixed": [],
+          "introduced": [
+            "install-clean"
+          ]
+        }
+      ]
+    },
+    "eligible": false
+  },
+  "accepted": {
+    "practice": {
+      "cases": 4,
+      "correct_before": 2,
+      "correct_after": 4,
+      "rows": [
+        {
+          "id": "import-failure",
+          "before": [],
+          "after": [
+            "install-clean"
+          ],
+          "expected": [
+            "install-clean"
+          ],
+          "fixed": [
+            "install-clean"
+          ],
+          "introduced": []
+        },
+        {
+          "id": "inspect-package",
+          "before": [],
+          "after": [],
+          "expected": [],
+          "fixed": [],
+          "introduced": []
+        },
+        {
+          "id": "missing-wheel",
+          "before": [],
+          "after": [
+            "install-clean"
+          ],
+          "expected": [
+            "install-clean"
+          ],
+          "fixed": [
+            "install-clean"
+          ],
+          "introduced": []
+        },
+        {
+          "id": "publish-guide",
+          "before": [],
+          "after": [],
+          "expected": [],
+          "fixed": [],
+          "introduced": []
+        }
+      ]
+    },
+    "exam": {
+      "cases": 4,
+      "correct_before": 2,
+      "correct_after": 4,
+      "rows": [
+        {
+          "id": "bsd-wheel",
+          "before": [],
+          "after": [
+            "install-clean"
+          ],
+          "expected": [
+            "install-clean"
+          ],
+          "fixed": [
+            "install-clean"
+          ],
+          "introduced": []
+        },
+        {
+          "id": "macos-wheel",
+          "before": [],
+          "after": [
+            "install-clean"
+          ],
+          "expected": [
+            "install-clean"
+          ],
+          "fixed": [
+            "install-clean"
+          ],
+          "introduced": []
+        },
+        {
+          "id": "read-wheel",
+          "before": [],
+          "after": [],
+          "expected": [],
+          "fixed": [],
+          "introduced": []
+        },
+        {
+          "id": "release-notes",
+          "before": [],
+          "after": [],
+          "expected": [],
+          "fixed": [],
+          "introduced": []
+        }
+      ]
+    },
+    "eligible": true
+  },
+  "manual": "# Project operations manual\n\nRevision 1\n\nUse the following instructions when the recorded conditions apply.\n\n## install-clean\n\nInstall the built package in a clean environment and import it.\n\nApplies when artefact = package, task = ship.\nPractice evidence (missing-wheel): Synthetic incident P1. The built wheel omitted its importable module.\n",
+  "missing_check": {
+    "revision": 1,
+    "missing": [
+      "install-clean"
+    ],
+    "pass": false
+  },
+  "completed_check": {
+    "revision": 1,
+    "missing": [],
+    "pass": true
+  },
+  "rollback_revision": 2,
+  "after_rollback": {
+    "revision": 2,
+    "instructions": []
+  }
+}

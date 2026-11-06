@@ -1,0 +1,48 @@
+name: Verify Opsbook
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+  release:
+    types: [published]
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - run: python3 -m unittest discover -s tests -v
+      - run: python3 examples/package_trial.py
+      - name: Fetch the pinned pstack distribution and verify its complete catalogue
+        run: |
+          python3 pstack.py fetch
+          python3 tests/check_upstream.py
+      - name: Assemble combined distribution
+        run: |
+          python3 bundle.py atlas-opsbook-with-pstack.zip
+          sha256sum atlas-opsbook-with-pstack.zip > SHA256SUMS
+          unzip -tq atlas-opsbook-with-pstack.zip
+      - uses: actions/upload-artifact@v4
+        with:
+          name: combined-distribution
+          path: |
+            atlas-opsbook-with-pstack.zip
+            SHA256SUMS
+  publish-assets:
+    if: github.event_name == 'release'
+    needs: verify
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: combined-distribution
+      - name: Attach verified files to this release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ github.event.release.tag_name }}
+        run: gh release upload "$TAG" --repo "$GITHUB_REPOSITORY" atlas-opsbook-with-pstack.zip SHA256SUMS --clobber

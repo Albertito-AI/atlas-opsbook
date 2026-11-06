@@ -1,0 +1,10 @@
+[
+ {"id":"missing-wheel","set":"practice","context":{"task":"ship","artefact":"package","os":"linux"},"expected":["install-clean"],"evidence":"Synthetic incident P1. The built wheel omitted its importable module."},
+ {"id":"import-failure","set":"practice","context":{"task":"ship","artefact":"package","os":"windows"},"expected":["install-clean"],"evidence":"Synthetic incident P2. An editable install concealed a packaging error."},
+ {"id":"publish-guide","set":"practice","context":{"task":"ship","artefact":"guide","os":"linux"},"expected":[],"evidence":"Synthetic control P3. A text-only guide has no package to install."},
+ {"id":"inspect-package","set":"practice","context":{"task":"inspect","artefact":"package","os":"linux"},"expected":[],"evidence":"Synthetic control P4. A read-only inventory creates no release."},
+ {"id":"macos-wheel","set":"exam","context":{"task":"ship","artefact":"package","os":"macos"},"expected":["install-clean"],"evidence":"Synthetic evaluation E1. Clean installation is required for this wheel release."},
+ {"id":"bsd-wheel","set":"exam","context":{"task":"ship","artefact":"package","os":"freebsd"},"expected":["install-clean"],"evidence":"Synthetic evaluation E2. This release needs an installation check."},
+ {"id":"release-notes","set":"exam","context":{"task":"ship","artefact":"guide","os":"macos"},"expected":[],"evidence":"Synthetic evaluation E3. Release notes contain no installable package."},
+ {"id":"read-wheel","set":"exam","context":{"task":"inspect","artefact":"package","os":"freebsd"},"expected":[],"evidence":"Synthetic evaluation E4. Reading package metadata produces no release."}
+]

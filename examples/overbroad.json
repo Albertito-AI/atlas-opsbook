@@ -1,0 +1,1 @@
+{"id":"all-releases","when":{"task":"ship"},"check":"install-clean","instruction":"Install every release in a clean environment.","basis":"missing-wheel"}

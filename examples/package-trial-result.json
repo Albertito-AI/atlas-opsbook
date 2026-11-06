@@ -1,0 +1,27 @@
+{
+  "before_learning": {
+    "checks": [],
+    "pass": true,
+    "revision": 0
+  },
+  "broken_artifact": {
+    "checks": [
+      {
+        "check": "install-clean",
+        "exit": 1
+      }
+    ],
+    "pass": false,
+    "revision": 1
+  },
+  "repaired_artifact": {
+    "checks": [
+      {
+        "check": "install-clean",
+        "exit": 0
+      }
+    ],
+    "pass": true,
+    "revision": 1
+  }
+}

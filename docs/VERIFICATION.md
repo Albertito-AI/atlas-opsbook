@@ -1,0 +1,25 @@
+# Verification record for 0.1.0
+
+Run the following at the root of a clean source checkout. The main suite and both demonstrations require Python's standard library only. Network access and Git are required for the separate upstream integration check.
+
+```sh
+python3 -m unittest discover -s tests -v
+python3 opsbook.py demo
+python3 examples/package_trial.py
+python3 pstack.py fetch
+python3 tests/check_upstream.py
+```
+
+The local suite exercises inference, exam isolation during fitting, unsafe generalisation, controls, stale proposals, concurrent promotion, atomic import, instruction installation, rollback, command failures and a real broken archive. CI also verifies the upstream tree and every named workflow entry point. [GitHub Actions runs](https://github.com/Albertito-AI/atlas-opsbook/actions).
+
+| Rule in synthetic release exercise | Correct on four exam contexts | New error | Decision |
+| --- | ---: | --- | --- |
+| Empty manual | 2 | Baseline | Active at start |
+| Require installation for every release | 3 | Applies a package check to release notes | Refused |
+| Require installation when shipping a package | 4 | None on these cases | Accepted |
+
+The learner received four labelled practice cases. Four further public synthetic examples were used for replay. These eight examples are visible in the distribution and deliberately small. The table is a deterministic routing result. Inspect every case in the [replay output](../examples/replay.json).
+
+The [archive trial](../examples/package-trial-result.json) runs actual Python processes. Before learning, the empty manual selected zero commands. After promotion, the clean-import check exited 1 on a deliberately broken ZIP and exited 0 on the repaired one. The invocation uses isolated Python, a temporary archive and no external service.
+
+Live Cursor and Claude sessions, model judgement across unseen repositories, operator time, model cost and comparative productivity remain open for independent measurement. The [evaluation design](WHITEPAPER.md#how-to-test-a-larger-claim) describes an appropriate next experiment.

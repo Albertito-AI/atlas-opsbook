@@ -1,0 +1,3 @@
+.opsbook/
+__pycache__/
+*.pyc
