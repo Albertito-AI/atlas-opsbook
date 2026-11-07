@@ -3,6 +3,9 @@ on:
   push:
   pull_request:
   workflow_dispatch:
+  schedule:
+    # 05:17 and 17:17 Asia/Singapore, before the existing maintenance reviews.
+    - cron: '17 9,21 * * *'
   release:
     types: [published]
 permissions:
@@ -10,6 +13,7 @@ permissions:
 jobs:
   verify:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
         with:
@@ -28,6 +32,7 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: combined-distribution
+          retention-days: 7
           path: |
             atlas-opsbook-with-pstack.zip
             SHA256SUMS
