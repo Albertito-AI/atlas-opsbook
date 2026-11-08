@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Project-local, replay-tested operations manuals. Requires Python 3.9+."""
 import argparse
+from contextlib import closing
 import hashlib
 import itertools
 import json
@@ -261,7 +262,8 @@ def transact(path, args):
         fail("Initialise the project with init first.")
     if not exists:
         path.parent.mkdir(parents=True, exist_ok=True)
-    with sqlite3.connect(path, timeout=10) as con:
+    # SQLite's context manager commits or rolls back; closing releases the handle.
+    with closing(sqlite3.connect(path, timeout=10)) as con, con:
         con.execute("BEGIN IMMEDIATE")
         if args.cmd == "init":
             con.execute("CREATE TABLE IF NOT EXISTS book (id INTEGER PRIMARY KEY CHECK(id=1), data TEXT NOT NULL)")

@@ -1,10 +1,12 @@
 import concurrent.futures
 import json
 from pathlib import Path
+import sqlite3
 import subprocess
 import sys
 import tempfile
 import unittest
+from unittest.mock import patch
 
 import install_agent
 import opsbook as b
@@ -107,6 +109,54 @@ class Manual(unittest.TestCase):
 
 
 class Integration(unittest.TestCase):
+    def test_transactions_close_connections_and_preserve_commits(self):
+        with tempfile.TemporaryDirectory() as d:
+            db = Path(d) / "manual.db"
+            for argv in (["init"], ["record", str(ROOT / "examples/cases.json")]):
+                connection = sqlite3.connect(db)
+                try:
+                    with patch("opsbook.sqlite3.connect", return_value=connection):
+                        b.transact(db, b.parser().parse_args(argv))
+                    with self.assertRaises(sqlite3.ProgrammingError):
+                        connection.execute("SELECT 1")
+                finally:
+                    connection.close()
+            connection = sqlite3.connect(db)
+            try:
+                state = json.loads(connection.execute("SELECT data FROM book WHERE id=1").fetchone()[0])
+                self.assertEqual(len(state["cases"]), len(CASES))
+            finally:
+                connection.close()
+
+    def test_transactions_close_connections_on_validation_and_database_errors(self):
+        with tempfile.TemporaryDirectory() as d:
+            db = Path(d) / "manual.db"
+            b.transact(db, b.parser().parse_args(["init"]))
+            invalid = Path(d) / "cases.json"
+            invalid.write_text(json.dumps([CASES[0], {"id": "invalid"}]))
+            empty = Path(d) / "empty.db"
+            empty.touch()
+            for path, argv, error in (
+                (db, ["record", str(invalid)], ValueError),
+                (empty, ["history"], sqlite3.OperationalError),
+            ):
+                with self.subTest(command=argv[0]):
+                    connection = sqlite3.connect(path)
+                    try:
+                        with patch("opsbook.sqlite3.connect", return_value=connection):
+                            with self.assertRaises(error):
+                                b.transact(path, b.parser().parse_args(argv))
+                        with self.assertRaises(sqlite3.ProgrammingError):
+                            connection.execute("SELECT 1")
+                    finally:
+                        connection.close()
+            connection = sqlite3.connect(db)
+            try:
+                state = json.loads(connection.execute("SELECT data FROM book WHERE id=1").fetchone()[0])
+                self.assertEqual(state["cases"], {})
+            finally:
+                connection.close()
+
     def test_installs_each_host_and_preserves_codex_file(self):
         for host in ("codex","cursor","claude"):
             with tempfile.TemporaryDirectory() as d:
