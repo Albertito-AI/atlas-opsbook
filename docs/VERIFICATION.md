@@ -12,6 +12,13 @@ python3 tests/check_upstream.py
 
 The local suite exercises inference, exam isolation during fitting, unsafe generalisation, controls, stale proposals, concurrent promotion, atomic import, instruction installation, rollback, command failures and a real broken archive. CI also verifies the upstream tree and every named workflow entry point. [GitHub Actions runs](https://github.com/Albertito-AI/atlas-opsbook/actions).
 
+Current source also checks that each manual transaction closes its SQLite
+connection after success, validation failure and database failure. Successful
+case imports persist and failed imports leave the prior state intact. This
+avoids retaining database handles until garbage collection during repeated
+in-process use. These checks describe the current source, not a replacement
+of the previously published 0.1.1 archive.
+
 | Rule in synthetic release exercise | Correct on four exam contexts | New error | Decision |
 | --- | ---: | --- | --- |
 | Empty manual | 2 | Baseline | Active at start |
