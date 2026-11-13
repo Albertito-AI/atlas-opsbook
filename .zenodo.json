@@ -1,0 +1,20 @@
+{
+  "title": "Atlas Opsbook",
+  "description": "Teach a coding agent to write, test and revise its own project operations manual. Evidence-backed local learning for pstack and other agent workflows. This deposit preserves a dated source snapshot. It records the project's existing implementation and documentation, with the limitations stated in the repository.",
+  "creators": [
+    {
+      "name": "Tan, Sin Hon Albert",
+      "orcid": "0009-0001-8996-7933"
+    }
+  ],
+  "upload_type": "software",
+  "access_right": "open",
+  "license": "MIT",
+  "notes": "Original project code is MIT licensed. Separately obtained pstack code retains its upstream licence and attribution. An archival DOI does not establish peer review, independent validation or production readiness.",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/Albertito-AI/atlas-opsbook",
+      "relation": "isSupplementTo"
+    }
+  ]
+}
