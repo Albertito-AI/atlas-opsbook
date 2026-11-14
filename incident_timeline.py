@@ -77,6 +77,9 @@ def utc_timestamp(value):
         return None
     if not isinstance(value, str) or not TIMESTAMP.fullmatch(value) or value.endswith("-00:00"):
         raise ValueError("Time needs an explicit known UTC offset and seconds (up to six fractional digits)")
+    # Keep the declared contract stable even if a runtime accepts ISO 24:00.
+    if int(value[11:13]) > 23 or int(value[14:16]) > 59 or int(value[17:19]) > 59:
+        raise ValueError("Invalid clock time")
     if value[-1] != "Z" and (int(value[-5:-3]) > 23 or int(value[-2:]) > 59):
         raise ValueError("Invalid UTC offset")
     try:
