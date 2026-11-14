@@ -1,12 +1,27 @@
 """Independent lifecycle and real-process contention tests for the local queue."""
+from contextlib import closing
+import json
 import multiprocessing
 import os
 from pathlib import Path
 import queue as queue_module
+import sqlite3
 import tempfile
 import unittest
 
 from execution_queue import Queue, QueueError
+
+
+def encoded_json(value):
+    """Measure the documented wire representation without queue internals."""
+    return json.dumps(value, ensure_ascii=False, sort_keys=True,
+                      separators=(",", ":")).encode("utf-8")
+
+
+def evidence_at_byte_limit():
+    overhead = len(encoded_json({"observation": ""}))
+    pairs, remainder = divmod(65_536 - overhead, 2)
+    return {"observation": "é" * pairs + "x" * remainder}
 
 
 def claim_contender(database, clock_value, barrier, results, owner):
@@ -309,6 +324,65 @@ class ExecutionQueueTests(unittest.TestCase):
         with self.assertRaises(QueueError):
             self.queue.complete(*self.token(old), {"result": "stale"})
 
+    def test_fresh_attempt_clears_old_receipt_without_losing_reconciliation_evidence(self):
+        self.enqueue(effectful=True)
+        first = self.claim()
+        self.queue.begin_effect(*self.token(first))
+        self.queue.fail(*self.token(first), "first response unavailable")
+        evidence = {"inspection": "first effect absent", "attempt": first["fence"]}
+        reconciled = self.queue.reconcile(
+            "one", expected_fence=first["fence"], decision="not_applied",
+            evidence=evidence, quiescent=True)
+        self.assertEqual(reconciled["receipt"], evidence)
+        prior_events = self.queue.events("one")
+
+        second = self.claim("worker-2")
+        self.assertIsNone(second["receipt"], "A previous attempt's evidence is not this attempt's result")
+        self.assertGreater(second["fence"], first["fence"])
+        reopened = Queue(self.path, clock=lambda: tuple(self.now))
+        self.assertIsNone(reopened.get("one")["receipt"])
+        self.assertEqual(reopened.events("one")[:-1], prior_events)
+        self.assertEqual(prior_events[-1]["fence"], first["fence"])
+        self.assertEqual(prior_events[-1]["details"]["evidence"], evidence)
+
+    def test_exact_utf8_evidence_limit_is_retained_with_its_event_envelope(self):
+        self.enqueue(effectful=True)
+        row = self.claim()
+        self.queue.begin_effect(*self.token(row))
+        self.queue.fail(*self.token(row), "response unavailable")
+        evidence = evidence_at_byte_limit()
+        self.assertEqual(len(encoded_json(evidence)), 65_536)
+        self.assertLess(len(encoded_json(evidence).decode("utf-8")), 65_536)
+        result = self.queue.reconcile(
+            "one", expected_fence=row["fence"], decision="applied",
+            evidence=evidence, quiescent=True)
+
+        self.assertEqual(result["state"], "succeeded")
+        reopened = Queue(self.path, clock=lambda: tuple(self.now))
+        self.assertEqual(reopened.get("one")["receipt"], evidence)
+        event = reopened.events("one")[-1]
+        self.assertEqual(event["fence"], row["fence"])
+        self.assertEqual(event["details"]["evidence"], evidence)
+        self.assertGreater(len(encoded_json(event["details"])), 65_536)
+
+    def test_oversized_reconciliation_evidence_preserves_uncertainty_and_history(self):
+        self.enqueue(effectful=True)
+        row = self.claim()
+        self.queue.begin_effect(*self.token(row))
+        self.queue.fail(*self.token(row), "response unavailable")
+        before, history = self.queue.get("one"), self.queue.events("one")
+        evidence = evidence_at_byte_limit()
+        evidence["observation"] += "x"
+        self.assertEqual(len(encoded_json(evidence)), 65_537)
+        with self.assertRaises(QueueError):
+            self.queue.reconcile(
+                "one", expected_fence=row["fence"], decision="applied",
+                evidence=evidence, quiescent=True)
+        self.assertEqual(self.queue.get("one"), before)
+        self.assertEqual(self.queue.events("one"), history)
+        self.enqueue("other-writer", effectful=True)
+        self.assertIsNone(self.queue.claim("cannot-release-uncertain-slot"))
+
     def test_reconciliation_cannot_bypass_attempt_limit(self):
         self.enqueue(effectful=True, max_attempts=1)
         row = self.claim()
@@ -390,6 +464,31 @@ class ExecutionQueueTests(unittest.TestCase):
         with self.assertRaises(QueueError):
             reopened.complete(*self.token(row), receipt)
         self.assertIsNone(reopened.claim("again"))
+
+    def test_exact_utf8_completion_receipt_limit_survives_reopen(self):
+        self.enqueue()
+        row = self.claim()
+        receipt = evidence_at_byte_limit()
+        self.assertEqual(len(encoded_json(receipt)), 65_536)
+        result = self.queue.complete(*self.token(row), receipt)
+        self.assertEqual(result["state"], "succeeded")
+        reopened = Queue(self.path, clock=lambda: tuple(self.now))
+        self.assertEqual(reopened.get("one")["receipt"], receipt)
+        self.assertEqual(reopened.events("one")[-1]["event"], "completed")
+
+    def test_oversized_completion_receipt_preserves_lease_and_history(self):
+        self.enqueue()
+        row = self.claim()
+        history = self.queue.events("one")
+        receipt = evidence_at_byte_limit()
+        receipt["observation"] += "x"
+        self.assertEqual(len(encoded_json(receipt)), 65_537)
+        with self.assertRaises(QueueError):
+            self.queue.complete(*self.token(row), receipt)
+        self.assertEqual(self.queue.get("one"), row)
+        self.assertEqual(self.queue.events("one"), history)
+        result = self.queue.complete(*self.token(row), {"result": "valid replacement receipt"})
+        self.assertEqual(result["state"], "succeeded")
 
     def test_global_fence_survives_reopen_and_increases_across_jobs(self):
         self.enqueue("one")
@@ -487,6 +586,39 @@ class ExecutionQueueTests(unittest.TestCase):
         for identifier in ["", "含义", "x" * 10000, None, 12]:
             with self.subTest(identifier=identifier), self.assertRaises(QueueError):
                 self.queue.enqueue(identifier, **self.arguments("valid"))
+
+    def test_corrupt_stored_clock_cannot_claim_or_consume_a_fence(self):
+        before = self.enqueue()
+        history = self.queue.events("one")
+        corruptions = [("last_wall_ms", -1, self.now[0]),
+                       ("last_wall_ms", None, self.now[0]),
+                       ("last_elapsed_ms", 0.5, self.now[1]),
+                       ("clock_epoch", "", self.now[2])]
+        for field, invalid, original in corruptions:
+            with self.subTest(field=field, invalid=invalid):
+                # Fault injection targets the persisted clock, not the clock provider.
+                with closing(sqlite3.connect(self.path)) as connection, connection:
+                    connection.execute("UPDATE queue_meta SET " + field + "=? WHERE id=1", (invalid,))
+                try:
+                    with self.assertRaises(QueueError):
+                        Queue(self.path, clock=lambda: tuple(self.now)).claim("blocked-worker")
+                finally:
+                    with closing(sqlite3.connect(self.path)) as connection, connection:
+                        connection.execute("UPDATE queue_meta SET " + field + "=? WHERE id=1", (original,))
+                self.assertEqual(self.queue.get("one"), before)
+                self.assertEqual(self.queue.events("one"), history)
+        first = self.claim()
+        self.assertEqual(first["attempts"], 1)
+        self.assertEqual(first["fence"], 1)
+
+    def test_database_requires_a_persistent_regular_file(self):
+        with self.assertRaises(QueueError):
+            Queue(":memory:", clock=lambda: tuple(self.now))
+        directory = self.path.parent / "directory-target"
+        directory.mkdir()
+        with self.assertRaises(QueueError):
+            Queue(directory, clock=lambda: tuple(self.now)).init()
+        self.assertEqual(list(directory.iterdir()), [])
 
 
 if __name__ == "__main__":
