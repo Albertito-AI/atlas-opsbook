@@ -1,0 +1,2239 @@
+{
+  "schema_version": 1,
+  "reviewed_on": "2026-11-14",
+  "scope": "Evidence records for the fourteen additional profiles appended to ECOSYSTEM_SYNTHESIS.md; the preceding twelve profiles are documented in that report. Representative source reviews, not exhaustive audits.",
+  "method": "Read-only repository metadata, exact commit and selected-file inspections. Upstream code and test suites were not executed for these audits. Licence declarations and file-level exceptions are retained separately.",
+  "proposal_status": "All new experiments are proposed only. The existing pstack integration predates this addition.",
+  "profiles": [
+    {
+      "handle": "Carolinasgoncalves21",
+      "profile_url": "https://github.com/Carolinasgoncalves21",
+      "new_trial_status": "proposed_only",
+      "existing_integration": null,
+      "evidence": {
+        "handle": "Carolinasgoncalves21",
+        "profile_url": "https://github.com/Carolinasgoncalves21",
+        "summary": "Computing and digital-education teaching projects. A profile README identifies the author as a teacher; the strongest Atlas fit is accessible, explainable classroom exercises, not agent infrastructure.",
+        "repositories": [
+          {
+            "full_name": "Carolinasgoncalves21/Pong-JavaScript",
+            "url": "https://github.com/Carolinasgoncalves21/Pong-JavaScript",
+            "fork": false,
+            "parent": null,
+            "archived": false,
+            "license_metadata": "MIT",
+            "default_branch": "main",
+            "pushed_at": "2022-05-10T23:22:22Z",
+            "inspected_commit": "140a9ee068e9c44ff1452f532a446f0f284ccce1",
+            "commit_url": "https://github.com/Carolinasgoncalves21/Pong-JavaScript/commit/140a9ee068e9c44ff1452f532a446f0f284ccce1",
+            "classification": "non-fork educational p5.js game; not claimed to be a novel game algorithm",
+            "head_date": "2022-05-10T23:22:22Z",
+            "licence_evidence": "MIT metadata and LICENSE present"
+          },
+          {
+            "full_name": "Carolinasgoncalves21/Portfolio-EducacaoDigital2026",
+            "url": "https://github.com/Carolinasgoncalves21/Portfolio-EducacaoDigital2026",
+            "fork": false,
+            "parent": null,
+            "archived": false,
+            "license_metadata": "MIT",
+            "default_branch": "main",
+            "pushed_at": "2026-05-26T01:43:23Z",
+            "inspected_commit": "2dc508853f445d7f0480f660c57997d802ebef43",
+            "commit_url": "https://github.com/Carolinasgoncalves21/Portfolio-EducacaoDigital2026/commit/2dc508853f445d7f0480f660c57997d802ebef43",
+            "classification": "non-fork small static teaching portfolio",
+            "head_date": "2026-05-26T01:43:23Z",
+            "licence_evidence": "MIT metadata and LICENSE present"
+          },
+          {
+            "full_name": "Carolinasgoncalves21/FlashCardsComImagem",
+            "url": "https://github.com/Carolinasgoncalves21/FlashCardsComImagem",
+            "fork": true,
+            "parent": "silviosnjr/FlashCardsComImagem",
+            "archived": false,
+            "license_metadata": null,
+            "default_branch": "main",
+            "pushed_at": "2024-11-19T13:10:51Z",
+            "inspected_commit": "b27dc2447937d72978bbe800095aa69fbbb7ab32",
+            "commit_url": "https://github.com/Carolinasgoncalves21/FlashCardsComImagem/commit/b27dc2447937d72978bbe800095aa69fbbb7ab32",
+            "classification": "fork; credit silviosnjr/FlashCardsComImagem",
+            "licence_evidence": "No detected licence; not approved for code incorporation"
+          },
+          {
+            "full_name": "Carolinasgoncalves21/criando-sua-aventura",
+            "url": "https://github.com/Carolinasgoncalves21/criando-sua-aventura",
+            "fork": true,
+            "parent": "femascheti/criando-sua-aventura",
+            "archived": false,
+            "license_metadata": null,
+            "default_branch": "main",
+            "pushed_at": "2024-08-28T18:55:32Z",
+            "inspected_commit": "3d81ec8c4f2daf05af9e9aff3740c837353b0017",
+            "commit_url": "https://github.com/Carolinasgoncalves21/criando-sua-aventura/commit/3d81ec8c4f2daf05af9e9aff3740c837353b0017",
+            "classification": "fork of an Alura Start teaching project; credit femascheti",
+            "head_date": "2024-05-29T17:44:37Z",
+            "licence_evidence": "No detected licence; not approved for code incorporation"
+          }
+        ],
+        "sources": [
+          {
+            "repository": "Carolinasgoncalves21/Carolinasgoncalves21",
+            "commit": "583522eb94d7128fb0432b1ec3ce685a28caf6bf",
+            "path": "README.md",
+            "url": "https://github.com/Carolinasgoncalves21/Carolinasgoncalves21/blob/583522eb94d7128fb0432b1ec3ce685a28caf6bf/README.md"
+          },
+          {
+            "repository": "Carolinasgoncalves21/Pong-JavaScript",
+            "commit": "140a9ee068e9c44ff1452f532a446f0f284ccce1",
+            "path": "sketch.js",
+            "url": "https://github.com/Carolinasgoncalves21/Pong-JavaScript/blob/140a9ee068e9c44ff1452f532a446f0f284ccce1/sketch.js"
+          },
+          {
+            "repository": "Carolinasgoncalves21/Portfolio-EducacaoDigital2026",
+            "commit": "2dc508853f445d7f0480f660c57997d802ebef43",
+            "path": "index.html",
+            "url": "https://github.com/Carolinasgoncalves21/Portfolio-EducacaoDigital2026/blob/2dc508853f445d7f0480f660c57997d802ebef43/index.html"
+          }
+        ],
+        "lessons": [
+          "Expose state and rules in small named functions; Pong separates motion, collisions, input and score display.",
+          "Use immediate visual feedback to teach mathematical state transitions.",
+          "Link exercises to learner-facing explanations and simple portfolios.",
+          "Preserve the upstream identity of teaching remixes; neither flashcards nor the adventure fork should be called original Atlas or Carolina inventions.",
+          "Verify edge conditions, assets and accessibility before adopting classroom demos as robust teaching material."
+        ],
+        "static_findings": [
+          {
+            "claim": "The Pong code uses mutable global position/velocity/score and a p5 draw loop; it references three audio assets.",
+            "evidence": {
+              "repository": "Carolinasgoncalves21/Pong-JavaScript",
+              "commit": "140a9ee068e9c44ff1452f532a446f0f284ccce1",
+              "path": "sketch.js",
+              "url": "https://github.com/Carolinasgoncalves21/Pong-JavaScript/blob/140a9ee068e9c44ff1452f532a446f0f284ccce1/sketch.js"
+            }
+          },
+          {
+            "claim": "The player paddle has explicit bounds; the opponent tracks the ball with no equivalent clamp in the inspected function. This motivates boundary tests, not a verified runtime defect report.",
+            "evidence": {
+              "repository": "Carolinasgoncalves21/Pong-JavaScript",
+              "commit": "140a9ee068e9c44ff1452f532a446f0f284ccce1",
+              "path": "sketch.js",
+              "url": "https://github.com/Carolinasgoncalves21/Pong-JavaScript/blob/140a9ee068e9c44ff1452f532a446f0f284ccce1/sketch.js"
+            }
+          }
+        ],
+        "atlas_fit": [
+          "Atlas School",
+          "Atlas Open Mathematics teaching exercises"
+        ],
+        "bounded_integration": {
+          "name": "Deterministic game-state teaching lab",
+          "proposal": "Write an original pure step(state,input,dt) toy simulation using synthetic inputs, with a separate simple renderer. Use it to teach invariants and replay.",
+          "acceptance": [
+            "same inputs produce identical state",
+            "paddles remain in declared bounds",
+            "one boundary crossing produces one score event",
+            "pause prevents motion",
+            "keyboard-only operation and text score"
+          ],
+          "cost": "No paid APIs or services; local-only test fixtures.",
+          "non_goals": [
+            "No copy of unlicensed forks",
+            "No autonomous game agent or state-of-the-art claim"
+          ]
+        }
+      }
+    },
+    {
+      "handle": "jtao1735",
+      "profile_url": "https://github.com/jtao1735",
+      "new_trial_status": "proposed_only",
+      "existing_integration": null,
+      "evidence": {
+        "handle": "jtao1735",
+        "profile_url": "https://github.com/jtao1735",
+        "summary": "The two personal repositories returned by search are forks. Verified organisation contributions are in taosdata/TDengine, especially documentation. Attribute TDengine to its organisation and contributors, not solely to this account.",
+        "repositories": [
+          {
+            "full_name": "jtao1735/awesome-time-series",
+            "url": "https://github.com/jtao1735/awesome-time-series",
+            "fork": true,
+            "parent": "lmmentel/awesome-time-series",
+            "archived": false,
+            "license_metadata": null,
+            "default_branch": "main",
+            "pushed_at": "2023-01-25T20:51:41Z",
+            "inspected_commit": "f470a48a9b8ad934fdfa119fde877d0624d16c8a",
+            "commit_url": "https://github.com/jtao1735/awesome-time-series/commit/f470a48a9b8ad934fdfa119fde877d0624d16c8a",
+            "classification": "forked resource catalogue, not original models",
+            "head_date": "2023-01-18T20:19:48Z",
+            "licence_evidence": "No detected licence; individual linked projects have independent licences"
+          },
+          {
+            "full_name": "jtao1735/incubator-seatunnel",
+            "url": "https://github.com/jtao1735/incubator-seatunnel",
+            "fork": true,
+            "parent": "apache/seatunnel",
+            "archived": false,
+            "license_metadata": "Apache-2.0",
+            "default_branch": "dev",
+            "pushed_at": "2023-02-07T14:40:42Z",
+            "inspected_commit": "42bb0129327fef63e5e048baa7985b3d1b96ff30",
+            "commit_url": "https://github.com/jtao1735/incubator-seatunnel/commit/42bb0129327fef63e5e048baa7985b3d1b96ff30",
+            "classification": "fork of apache/seatunnel",
+            "head_date": "2023-02-07T12:36:47Z"
+          },
+          {
+            "full_name": "taosdata/TDengine",
+            "url": "https://github.com/taosdata/TDengine",
+            "fork": false,
+            "parent": null,
+            "archived": false,
+            "license_metadata": "AGPL-3.0",
+            "default_branch": "main",
+            "pushed_at": "2026-11-14T02:17:39Z",
+            "inspected_commit": "120bb96e049dd43aae4a9260ef62f731814fe64a",
+            "commit_url": "https://github.com/taosdata/TDengine/commit/120bb96e049dd43aae4a9260ef62f731814fe64a",
+            "classification": "organisation project with verified jtao1735 commits; not a personal fork",
+            "licence_evidence": "Current repository metadata AGPL-3.0. Do not copy into Atlas without component/licence review."
+          }
+        ],
+        "sources": [
+          {
+            "repository": "jtao1735/awesome-time-series",
+            "commit": "f470a48a9b8ad934fdfa119fde877d0624d16c8a",
+            "path": "README.md",
+            "url": "https://github.com/jtao1735/awesome-time-series/blob/f470a48a9b8ad934fdfa119fde877d0624d16c8a/README.md"
+          },
+          {
+            "repository": "jtao1735/incubator-seatunnel",
+            "commit": "42bb0129327fef63e5e048baa7985b3d1b96ff30",
+            "path": "README.md",
+            "url": "https://github.com/jtao1735/incubator-seatunnel/blob/42bb0129327fef63e5e048baa7985b3d1b96ff30/README.md"
+          },
+          {
+            "repository": "taosdata/TDengine",
+            "commit": "120bb96e049dd43aae4a9260ef62f731814fe64a",
+            "path": "docs/zh/05-basic/01-model.md",
+            "url": "https://github.com/taosdata/TDengine/blob/120bb96e049dd43aae4a9260ef62f731814fe64a/docs/zh/05-basic/01-model.md"
+          }
+        ],
+        "verified_contributions": [
+          {
+            "sha": "bb85646763130b6ad2f449342c6f331613ff9c09",
+            "date": "2025-03-25T23:39:56Z",
+            "message": "docs: update tdgpt installation steps (#30478)",
+            "url": "https://github.com/taosdata/TDengine/commit/bb85646763130b6ad2f449342c6f331613ff9c09",
+            "author": "jtao1735"
+          },
+          {
+            "sha": "120bb96e049dd43aae4a9260ef62f731814fe64a",
+            "date": "2025-03-23T07:00:32Z",
+            "message": "Update 01-model.md",
+            "url": "https://github.com/taosdata/TDengine/commit/120bb96e049dd43aae4a9260ef62f731814fe64a",
+            "author": "jtao1735"
+          },
+          {
+            "sha": "5c28834c90c1fc14eb09e2681ed04fad151c1bd7",
+            "date": "2025-03-23T06:11:56Z",
+            "message": "Update 02-insert.md",
+            "url": "https://github.com/taosdata/TDengine/commit/5c28834c90c1fc14eb09e2681ed04fad151c1bd7",
+            "author": "jtao1735"
+          }
+        ],
+        "lessons": [
+          "Separate time-varying measurements from relatively stable resource labels.",
+          "Declare timestamp units and timezone interpretation at ingestion.",
+          "Keep missing observations distinct from zero or success.",
+          "Time alignment across independent collectors should expose absent values rather than inventing a measurement.",
+          "Use source-transform-sink boundaries for integration, attributed to Apache SeaTunnel.",
+          "Treat awesome lists as discovery indexes, not benchmark evidence or licence grants."
+        ],
+        "atlas_fit": [
+          "Atlas Maintenance 50 telemetry",
+          "Opsbook evidence reconciliation",
+          "research reproducibility"
+        ],
+        "bounded_integration": {
+          "name": "Time-aligned maintenance evidence fixture",
+          "proposal": "Implement an original standard-library function that combines synthetic check observations by UTC timestamp and resource ID, retaining missing values and source provenance.",
+          "acceptance": [
+            "out-of-order input has deterministic output",
+            "duplicates are explicitly rejected or deduplicated by declared key",
+            "missing is not mapped to healthy or zero",
+            "timestamp units must be declared",
+            "no future-dated evidence enters a past snapshot"
+          ],
+          "cost": "No database deployment or paid service.",
+          "non_goals": [
+            "No TDengine source copying",
+            "No performance claims",
+            "No live infrastructure ingestion"
+          ]
+        }
+      }
+    },
+    {
+      "handle": "alstn2468",
+      "profile_url": "https://github.com/alstn2468",
+      "new_trial_status": "proposed_only",
+      "existing_integration": null,
+      "evidence": {
+        "handle": "alstn2468",
+        "profile_url": "https://github.com/alstn2468",
+        "summary": "Functional-programming education, typed frontend experiments and classic scheduling exercises. The JSConf deck credits Minsu Kim and Changhui Lee. Several notable libraries in the account are forks.",
+        "repositories": [
+          {
+            "full_name": "alstn2468/2022-jsconf-presentation",
+            "url": "https://github.com/alstn2468/2022-jsconf-presentation",
+            "fork": false,
+            "parent": null,
+            "archived": false,
+            "license_metadata": "Apache-2.0",
+            "default_branch": "main",
+            "pushed_at": "2022-11-14T04:11:39Z",
+            "inspected_commit": "7a7112eb6de94f40bf92d96345652b83d45bcde1",
+            "commit_url": "https://github.com/alstn2468/2022-jsconf-presentation/commit/7a7112eb6de94f40bf92d96345652b83d45bcde1",
+            "classification": "coauthored presentation; credits Minsu Kim and Changhui Lee",
+            "head_date": "2022-11-14T04:11:37Z"
+          },
+          {
+            "full_name": "alstn2468/cpu-scheduling-simulator",
+            "url": "https://github.com/alstn2468/cpu-scheduling-simulator",
+            "fork": false,
+            "parent": null,
+            "archived": false,
+            "license_metadata": "MIT",
+            "default_branch": "master",
+            "pushed_at": "2019-11-02T10:12:54Z",
+            "inspected_commit": "60a2069cb90a6db1b2ccdc9374fd9a80cd3019e1",
+            "commit_url": "https://github.com/alstn2468/cpu-scheduling-simulator/commit/60a2069cb90a6db1b2ccdc9374fd9a80cd3019e1",
+            "classification": "non-fork educational implementation of established scheduling algorithms, with contributors credited",
+            "head_date": "2019-11-02T10:12:53Z"
+          },
+          {
+            "full_name": "alstn2468/nextjs-localization-template",
+            "url": "https://github.com/alstn2468/nextjs-localization-template",
+            "fork": false,
+            "parent": null,
+            "archived": false,
+            "license_metadata": null,
+            "default_branch": "main",
+            "pushed_at": "2022-10-27T08:48:12Z",
+            "inspected_commit": "33a511d7d53f65f25758a5ce91d1398a907acbfb",
+            "commit_url": "https://github.com/alstn2468/nextjs-localization-template/commit/33a511d7d53f65f25758a5ce91d1398a907acbfb",
+            "classification": "non-fork learning experiment; README explicitly says author would probably use next-i18next in production",
+            "head_date": "2022-10-27T08:47:18Z",
+            "licence_evidence": "No detected licence or licence file"
+          },
+          {
+            "full_name": "alstn2468/use-funnel",
+            "url": "https://github.com/alstn2468/use-funnel",
+            "fork": true,
+            "parent": "toss/use-funnel",
+            "archived": false,
+            "license_metadata": "MIT",
+            "default_branch": "main",
+            "pushed_at": "2024-08-20T06:41:29Z",
+            "inspected_commit": "97043dd97c782792df1b87d38b481d5147a6ebe5",
+            "commit_url": "https://github.com/alstn2468/use-funnel/commit/97043dd97c782792df1b87d38b481d5147a6ebe5",
+            "classification": "fork of toss/use-funnel; not the author's original library"
+          },
+          {
+            "full_name": "alstn2468/category-theory-for-programmers",
+            "url": "https://github.com/alstn2468/category-theory-for-programmers",
+            "fork": false,
+            "parent": null,
+            "archived": false,
+            "license_metadata": "MIT",
+            "default_branch": "main",
+            "pushed_at": "2022-08-16T13:07:01Z",
+            "inspected_commit": null,
+            "commit_url": null,
+            "classification": "translation of Bartosz Milewski's work, not an original category-theory text"
+          }
+        ],
+        "sources": [
+          {
+            "repository": "alstn2468/2022-jsconf-presentation",
+            "commit": "7a7112eb6de94f40bf92d96345652b83d45bcde1",
+            "path": "README.md",
+            "url": "https://github.com/alstn2468/2022-jsconf-presentation/blob/7a7112eb6de94f40bf92d96345652b83d45bcde1/README.md"
+          },
+          {
+            "repository": "alstn2468/cpu-scheduling-simulator",
+            "commit": "60a2069cb90a6db1b2ccdc9374fd9a80cd3019e1",
+            "path": "README.md",
+            "url": "https://github.com/alstn2468/cpu-scheduling-simulator/blob/60a2069cb90a6db1b2ccdc9374fd9a80cd3019e1/README.md"
+          },
+          {
+            "repository": "alstn2468/cpu-scheduling-simulator",
+            "commit": "60a2069cb90a6db1b2ccdc9374fd9a80cd3019e1",
+            "path": "CpuSchedulingAlgorithmsModule/RR.h",
+            "url": "https://github.com/alstn2468/cpu-scheduling-simulator/blob/60a2069cb90a6db1b2ccdc9374fd9a80cd3019e1/CpuSchedulingAlgorithmsModule/RR.h"
+          },
+          {
+            "repository": "alstn2468/nextjs-localization-template",
+            "commit": "33a511d7d53f65f25758a5ce91d1398a907acbfb",
+            "path": "scripts/generate.ts",
+            "url": "https://github.com/alstn2468/nextjs-localization-template/blob/33a511d7d53f65f25758a5ce91d1398a907acbfb/scripts/generate.ts"
+          },
+          {
+            "repository": "alstn2468/nextjs-localization-template",
+            "commit": "33a511d7d53f65f25758a5ce91d1398a907acbfb",
+            "path": "README.md",
+            "url": "https://github.com/alstn2468/nextjs-localization-template/blob/33a511d7d53f65f25758a5ce91d1398a907acbfb/README.md"
+          }
+        ],
+        "lessons": [
+          "Compare scheduling policies on the same declared workload, including response and waiting time.",
+          "Separate a pure scheduling model from rendering or real task execution.",
+          "Check arrival times, idle gaps and invalid quantum values before trusting schedule output.",
+          "Typed translation keys improve discoverability but do not establish equal locale coverage.",
+          "Functional composition should preserve errors; the inspected type-generation reduction ignores failed file reads.",
+          "Retain coauthor, translator and upstream-library attribution."
+        ],
+        "static_findings": [
+          {
+            "claim": "The inspected round-robin loop dispatches on remaining burst time without checking arrival eligibility in the loop. It also has no visible local rejection of nonpositive quantum. These are static edge cases requiring tests; no executable was run.",
+            "evidence": {
+              "repository": "alstn2468/cpu-scheduling-simulator",
+              "commit": "60a2069cb90a6db1b2ccdc9374fd9a80cd3019e1",
+              "path": "CpuSchedulingAlgorithmsModule/RR.h",
+              "url": "https://github.com/alstn2468/cpu-scheduling-simulator/blob/60a2069cb90a6db1b2ccdc9374fd9a80cd3019e1/CpuSchedulingAlgorithmsModule/RR.h"
+            }
+          },
+          {
+            "claim": "Translation-key generation combines keys across successful files and silently ignores Either errors. A union of keys cannot prove that every locale provides every key.",
+            "evidence": {
+              "repository": "alstn2468/nextjs-localization-template",
+              "commit": "33a511d7d53f65f25758a5ce91d1398a907acbfb",
+              "path": "scripts/generate.ts",
+              "url": "https://github.com/alstn2468/nextjs-localization-template/blob/33a511d7d53f65f25758a5ce91d1398a907acbfb/scripts/generate.ts"
+            }
+          }
+        ],
+        "atlas_fit": [
+          "Maintenance 50 workload simulator",
+          "Atlas School functional-programming lessons",
+          "website localisation validation"
+        ],
+        "bounded_integration": {
+          "name": "Arrival-aware scheduling comparison",
+          "proposal": "Write an original pure local FCFS and round-robin simulator for synthetic maintenance jobs; return traces and fairness metrics without dispatching agents.",
+          "acceptance": [
+            "no job runs before arrival",
+            "idle gaps advance time correctly",
+            "quantum must be positive",
+            "total service equals total requested burst",
+            "all finite eligible jobs terminate",
+            "tie ordering is deterministic"
+          ],
+          "cost": "Standard-library local fixtures only.",
+          "non_goals": [
+            "No scheduling production changes",
+            "No claim of optimality",
+            "No reuse of bundled executable"
+          ]
+        }
+      }
+    },
+    {
+      "handle": "MiryangJung",
+      "profile_url": "https://github.com/MiryangJung",
+      "new_trial_status": "proposed_only",
+      "existing_integration": null,
+      "evidence": {
+        "handle": "MiryangJung",
+        "profile_url": "https://github.com/MiryangJung",
+        "summary": "Frontend examples, ReScript bindings, translation/community work and a newer measured mobile-image demo. Use the demonstrated work; do not infer identity or expertise from the username.",
+        "repositories": [
+          {
+            "full_name": "MiryangJung/learn-go-with-tests-ko",
+            "url": "https://github.com/MiryangJung/learn-go-with-tests-ko",
+            "fork": false,
+            "parent": null,
+            "archived": false,
+            "license_metadata": "MIT",
+            "default_branch": "master",
+            "pushed_at": "2021-05-26T09:54:17Z",
+            "inspected_commit": "e2a0ff3f711499834351d663fa40065f01ad05b7",
+            "commit_url": "https://github.com/MiryangJung/learn-go-with-tests-ko/commit/e2a0ff3f711499834351d663fa40065f01ad05b7",
+            "classification": "Korean translation of quii/learn-go-with-tests despite fork:false; multiple translators credited",
+            "head_date": "2021-05-26T09:54:17Z"
+          },
+          {
+            "full_name": "MiryangJung/rescript-remix-blog-template",
+            "url": "https://github.com/MiryangJung/rescript-remix-blog-template",
+            "fork": false,
+            "parent": null,
+            "archived": false,
+            "license_metadata": "MIT",
+            "default_branch": "main",
+            "pushed_at": "2022-07-29T15:03:51Z",
+            "inspected_commit": "2ef3e5f134da4fb8d466504bd58cf45d6c81f724",
+            "commit_url": "https://github.com/MiryangJung/rescript-remix-blog-template/commit/2ef3e5f134da4fb8d466504bd58cf45d6c81f724",
+            "classification": "non-fork educational template with external binding and tutorial references",
+            "head_date": "2022-07-29T15:03:51Z"
+          },
+          {
+            "full_name": "MiryangJung/fossasia2026",
+            "url": "https://github.com/MiryangJung/fossasia2026",
+            "fork": false,
+            "parent": null,
+            "archived": false,
+            "license_metadata": null,
+            "default_branch": "main",
+            "pushed_at": "2026-03-10T07:04:16Z",
+            "inspected_commit": "7d07038476c954722af54d96f1263f78ce8d559a",
+            "commit_url": "https://github.com/MiryangJung/fossasia2026/commit/7d07038476c954722af54d96f1263f78ce8d559a",
+            "classification": "non-fork presentation and React Native image-loading demo",
+            "head_date": "2026-03-10T07:04:13Z",
+            "licence_evidence": "No detected licence or licence file"
+          },
+          {
+            "full_name": "MiryangJung/2022-feconf-slides-rescript-together",
+            "url": "https://github.com/MiryangJung/2022-feconf-slides-rescript-together",
+            "fork": false,
+            "parent": null,
+            "archived": true,
+            "license_metadata": null,
+            "default_branch": "main",
+            "pushed_at": "2022-11-11T06:26:34Z",
+            "inspected_commit": null,
+            "commit_url": null,
+            "classification": "archived presentation",
+            "licence_evidence": "No detected licence"
+          },
+          {
+            "full_name": "MiryangJung/rescript",
+            "url": "https://github.com/MiryangJung/rescript",
+            "fork": true,
+            "parent": "rescript-lang/rescript",
+            "archived": false,
+            "license_metadata": "NOASSERTION",
+            "default_branch": "master",
+            "pushed_at": "2025-04-06T12:55:01Z",
+            "inspected_commit": "786162891aa325422d089a008d94ccaeb4625a45",
+            "commit_url": "https://github.com/MiryangJung/rescript/commit/786162891aa325422d089a008d94ccaeb4625a45",
+            "classification": "fork of rescript-lang/rescript"
+          },
+          {
+            "full_name": "MiryangJung/supabase",
+            "url": "https://github.com/MiryangJung/supabase",
+            "fork": true,
+            "parent": "supabase/supabase",
+            "archived": false,
+            "license_metadata": "Apache-2.0",
+            "default_branch": "master",
+            "pushed_at": "2024-10-07T00:04:55Z",
+            "inspected_commit": "f086a09fc626e06a976c8d6489611a8c382e5a57",
+            "commit_url": "https://github.com/MiryangJung/supabase/commit/f086a09fc626e06a976c8d6489611a8c382e5a57",
+            "classification": "fork of supabase/supabase"
+          }
+        ],
+        "sources": [
+          {
+            "repository": "MiryangJung/learn-go-with-tests-ko",
+            "commit": "e2a0ff3f711499834351d663fa40065f01ad05b7",
+            "path": "README.md",
+            "url": "https://github.com/MiryangJung/learn-go-with-tests-ko/blob/e2a0ff3f711499834351d663fa40065f01ad05b7/README.md"
+          },
+          {
+            "repository": "MiryangJung/rescript-remix-blog-template",
+            "commit": "2ef3e5f134da4fb8d466504bd58cf45d6c81f724",
+            "path": "README.md",
+            "url": "https://github.com/MiryangJung/rescript-remix-blog-template/blob/2ef3e5f134da4fb8d466504bd58cf45d6c81f724/README.md"
+          },
+          {
+            "repository": "MiryangJung/rescript-remix-blog-template",
+            "commit": "2ef3e5f134da4fb8d466504bd58cf45d6c81f724",
+            "path": "bindings/Remix.res",
+            "url": "https://github.com/MiryangJung/rescript-remix-blog-template/blob/2ef3e5f134da4fb8d466504bd58cf45d6c81f724/bindings/Remix.res"
+          },
+          {
+            "repository": "MiryangJung/rescript-remix-blog-template",
+            "commit": "2ef3e5f134da4fb8d466504bd58cf45d6c81f724",
+            "path": "app/routes/index.res",
+            "url": "https://github.com/MiryangJung/rescript-remix-blog-template/blob/2ef3e5f134da4fb8d466504bd58cf45d6c81f724/app/routes/index.res"
+          },
+          {
+            "repository": "MiryangJung/fossasia2026",
+            "commit": "7d07038476c954722af54d96f1263f78ce8d559a",
+            "path": "demo/hooks/useLoadTimeTracker.ts",
+            "url": "https://github.com/MiryangJung/fossasia2026/blob/7d07038476c954722af54d96f1263f78ce8d559a/demo/hooks/useLoadTimeTracker.ts"
+          },
+          {
+            "repository": "MiryangJung/fossasia2026",
+            "commit": "7d07038476c954722af54d96f1263f78ce8d559a",
+            "path": "slides/slides.md",
+            "url": "https://github.com/MiryangJung/fossasia2026/blob/7d07038476c954722af54d96f1263f78ce8d559a/slides/slides.md"
+          }
+        ],
+        "lessons": [
+          "Make translation work coordinated: claimed tasks, a glossary, style rules and named translators.",
+          "Teach via testable examples while keeping original curriculum attribution.",
+          "Use narrow bindings at language/framework boundaries instead of replacing whole platforms.",
+          "Document unresolved questions and attempted fixes so others can reproduce the integration path.",
+          "Measure before making frontend performance claims; specify environment and workload.",
+          "Treat demonstration averages as workload-specific and report sample counts and tails for stronger Atlas comparisons."
+        ],
+        "static_findings": [
+          {
+            "claim": "The image-load tracker stores each start/end pair and recomputes the average from all accumulated entries; there is no percentile or bounded retention in that hook.",
+            "evidence": {
+              "repository": "MiryangJung/fossasia2026",
+              "commit": "7d07038476c954722af54d96f1263f78ce8d559a",
+              "path": "demo/hooks/useLoadTimeTracker.ts",
+              "url": "https://github.com/MiryangJung/fossasia2026/blob/7d07038476c954722af54d96f1263f78ce8d559a/demo/hooks/useLoadTimeTracker.ts"
+            }
+          },
+          {
+            "claim": "The slides report simulator experiments and explicitly caution that numbers may differ. Their performance figures were not independently reproduced in this audit.",
+            "evidence": {
+              "repository": "MiryangJung/fossasia2026",
+              "commit": "7d07038476c954722af54d96f1263f78ce8d559a",
+              "path": "slides/slides.md",
+              "url": "https://github.com/MiryangJung/fossasia2026/blob/7d07038476c954722af54d96f1263f78ce8d559a/slides/slides.md"
+            }
+          }
+        ],
+        "atlas_fit": [
+          "Atlas School multilingual curriculum",
+          "Atlas website performance evidence",
+          "typed adapters"
+        ],
+        "bounded_integration": {
+          "name": "Frontend measurement evidence summariser",
+          "proposal": "Write an original offline summariser of synthetic image-loading traces that reports count, mean, median, p95, failures, device/workload metadata and bounded-run identifiers.",
+          "acceptance": [
+            "reject negative/nonfinite durations",
+            "empty sample set is unknown, not zero latency",
+            "define percentile calculation explicitly",
+            "separate cold and warm runs",
+            "retain sample count and failure count",
+            "do not assert cross-device superiority"
+          ],
+          "cost": "No device, cloud, paid API or source-code reuse required.",
+          "non_goals": [
+            "No copying unlicensed FOSSASIA implementation",
+            "No performance superiority claim",
+            "No mobile gallery deployment"
+          ]
+        }
+      }
+    },
+    {
+      "handle": "chenBingX",
+      "profile_url": "https://github.com/chenBingX",
+      "new_trial_status": "proposed_only",
+      "existing_integration": null,
+      "evidence": {
+        "handle": "chenBingX",
+        "profile_url": "https://github.com/chenBingX",
+        "summary": "Android UI components and recent evidence-rich native release engineering. SuperTextView is non-fork; several Flutter component repositories are Fliggy-Mobile forks.",
+        "repositories": [
+          {
+            "full_name": "chenBingX/SuperTextView",
+            "url": "https://github.com/chenBingX/SuperTextView",
+            "fork": false,
+            "parent": null,
+            "archived": false,
+            "license_metadata": null,
+            "default_branch": "master",
+            "pushed_at": "2026-10-22T09:37:52Z",
+            "inspected_commit": "058f4e2730f9c20c164ba5bd43b1cffb46948a41",
+            "commit_url": "https://github.com/chenBingX/SuperTextView/commit/058f4e2730f9c20c164ba5bd43b1cffb46948a41",
+            "classification": "non-fork Android TextView extension with native GIF support",
+            "head_date": "2026-10-22T09:30:06Z",
+            "licence_evidence": "GitHub metadata null, but pinned README and ImageEngine.java explicitly carry Apache-2.0 notices. Native giflib has separate attribution; preserve component notices."
+          },
+          {
+            "full_name": "chenBingX/frefresh",
+            "url": "https://github.com/chenBingX/frefresh",
+            "fork": true,
+            "parent": "Fliggy-Mobile/frefresh",
+            "archived": false,
+            "license_metadata": "NOASSERTION",
+            "default_branch": "master",
+            "pushed_at": "2020-05-21T11:05:47Z",
+            "inspected_commit": "61760746a7f59ad4ef507dc952a551cc9376cca1",
+            "commit_url": "https://github.com/chenBingX/frefresh/commit/61760746a7f59ad4ef507dc952a551cc9376cca1",
+            "classification": "fork of Fliggy-Mobile/frefresh",
+            "head_date": "2020-05-21T11:05:30Z",
+            "licence_evidence": "Metadata NOASSERTION; actual LICENSE states Apache-2.0 and credits Fliggy Android Team"
+          },
+          {
+            "full_name": "chenBingX/ffloat",
+            "url": "https://github.com/chenBingX/ffloat",
+            "fork": true,
+            "parent": "Fliggy-Mobile/ffloat",
+            "archived": false,
+            "license_metadata": "NOASSERTION",
+            "default_branch": "master",
+            "pushed_at": "2020-05-15T09:10:09Z",
+            "inspected_commit": null,
+            "commit_url": null,
+            "classification": "fork of Fliggy-Mobile/ffloat; actual licence file not inspected"
+          },
+          {
+            "full_name": "chenBingX/fsearch",
+            "url": "https://github.com/chenBingX/fsearch",
+            "fork": true,
+            "parent": "Fliggy-Mobile/fsearch",
+            "archived": false,
+            "license_metadata": "NOASSERTION",
+            "default_branch": "master",
+            "pushed_at": "2020-06-15T10:02:04Z",
+            "inspected_commit": null,
+            "commit_url": null,
+            "classification": "fork of Fliggy-Mobile/fsearch; actual licence file not inspected"
+          },
+          {
+            "full_name": "chenBingX/fradio",
+            "url": "https://github.com/chenBingX/fradio",
+            "fork": true,
+            "parent": "Fliggy-Mobile/fradio",
+            "archived": false,
+            "license_metadata": "NOASSERTION",
+            "default_branch": "master",
+            "pushed_at": "2020-05-09T09:52:54Z",
+            "inspected_commit": null,
+            "commit_url": null,
+            "classification": "fork of Fliggy-Mobile/fradio; actual licence file not inspected"
+          },
+          {
+            "full_name": "chenBingX/flutter",
+            "url": "https://github.com/chenBingX/flutter",
+            "fork": true,
+            "parent": "flutter/flutter",
+            "archived": false,
+            "license_metadata": "BSD-3-Clause",
+            "default_branch": "master",
+            "pushed_at": "2019-07-08T06:21:50Z",
+            "inspected_commit": null,
+            "commit_url": null,
+            "classification": "fork of flutter/flutter; not an original framework"
+          }
+        ],
+        "sources": [
+          {
+            "repository": "chenBingX/SuperTextView",
+            "commit": "058f4e2730f9c20c164ba5bd43b1cffb46948a41",
+            "path": "README.md",
+            "url": "https://github.com/chenBingX/SuperTextView/blob/058f4e2730f9c20c164ba5bd43b1cffb46948a41/README.md"
+          },
+          {
+            "repository": "chenBingX/SuperTextView",
+            "commit": "058f4e2730f9c20c164ba5bd43b1cffb46948a41",
+            "path": "library/src/main/java/com/coorchice/library/ImageEngine.java",
+            "url": "https://github.com/chenBingX/SuperTextView/blob/058f4e2730f9c20c164ba5bd43b1cffb46948a41/library/src/main/java/com/coorchice/library/ImageEngine.java"
+          },
+          {
+            "repository": "chenBingX/SuperTextView",
+            "commit": "058f4e2730f9c20c164ba5bd43b1cffb46948a41",
+            "path": "tools/check_release_artifact.py",
+            "url": "https://github.com/chenBingX/SuperTextView/blob/058f4e2730f9c20c164ba5bd43b1cffb46948a41/tools/check_release_artifact.py"
+          },
+          {
+            "repository": "chenBingX/SuperTextView",
+            "commit": "058f4e2730f9c20c164ba5bd43b1cffb46948a41",
+            "path": "docs/test-results/release-v3.2.7/README.md",
+            "url": "https://github.com/chenBingX/SuperTextView/blob/058f4e2730f9c20c164ba5bd43b1cffb46948a41/docs/test-results/release-v3.2.7/README.md"
+          },
+          {
+            "repository": "chenBingX/SuperTextView",
+            "commit": "058f4e2730f9c20c164ba5bd43b1cffb46948a41",
+            "path": ".github/workflows/regression-tests.yml",
+            "url": "https://github.com/chenBingX/SuperTextView/blob/058f4e2730f9c20c164ba5bd43b1cffb46948a41/.github/workflows/regression-tests.yml"
+          },
+          {
+            "repository": "chenBingX/frefresh",
+            "commit": "61760746a7f59ad4ef507dc952a551cc9376cca1",
+            "path": "LICENSE",
+            "url": "https://github.com/chenBingX/frefresh/blob/61760746a7f59ad4ef507dc952a551cc9376cca1/LICENSE"
+          }
+        ],
+        "lessons": [
+          "Build extension points around narrow interfaces; the image engine can be replaced without replacing the view.",
+          "Validate the production package separately from a test build.",
+          "Check packaged bytes, coordinates, required classes, attribution and exclusion of test fixtures.",
+          "Record environment, exact artifact hashes and raw result evidence.",
+          "Separate executed architectures from merely packaged architectures.",
+          "Describe test coverage limitations explicitly; publication tests do not establish hosted artifact availability or every device's compatibility."
+        ],
+        "static_findings": [
+          {
+            "claim": "The release-artifact checker validates Maven coordinates, minSdk, JNI keep rules, native hashes, required production classes, giflib attribution and absence of regression fixtures.",
+            "evidence": {
+              "repository": "chenBingX/SuperTextView",
+              "commit": "058f4e2730f9c20c164ba5bd43b1cffb46948a41",
+              "path": "tools/check_release_artifact.py",
+              "url": "https://github.com/chenBingX/SuperTextView/blob/058f4e2730f9c20c164ba5bd43b1cffb46948a41/tools/check_release_artifact.py"
+            }
+          },
+          {
+            "claim": "Pinned release notes report a final-AAR ARM64 16 KB virtual-device run and explicitly exclude physical-device, full GIF conformance, fuzzing, leak and thread-safety coverage. These are repository-reported runs, not rerun by this audit.",
+            "evidence": {
+              "repository": "chenBingX/SuperTextView",
+              "commit": "058f4e2730f9c20c164ba5bd43b1cffb46948a41",
+              "path": "docs/test-results/release-v3.2.7/README.md",
+              "url": "https://github.com/chenBingX/SuperTextView/blob/058f4e2730f9c20c164ba5bd43b1cffb46948a41/docs/test-results/release-v3.2.7/README.md"
+            }
+          }
+        ],
+        "atlas_fit": [
+          "Atlas Maintenance 50 release gates",
+          "Opsbook release evidence",
+          "website/component adapters"
+        ],
+        "bounded_integration": {
+          "name": "Release evidence bundle contract",
+          "proposal": "Write an original local validator for a synthetic release manifest and ZIP: required files, forbidden test fixtures, SHA-256 digests, provenance/notice entries and scoped test evidence. Align it with the existing Opsbook release modules.",
+          "acceptance": [
+            "detect tampered file bytes",
+            "detect missing notice and required file",
+            "reject unexpected test fixture",
+            "distinguish packaged from runtime-tested platform",
+            "report tests not performed rather than infer pass",
+            "emit deterministic validation report"
+          ],
+          "cost": "Standard-library local ZIP/JSON fixtures; no Android SDK or paid services.",
+          "non_goals": [
+            "No release publication",
+            "No native binary execution",
+            "No copying upstream checker",
+            "No universal compatibility claim"
+          ]
+        }
+      }
+    },
+    {
+      "handle": "erhwenkuo",
+      "profile_url": "https://github.com/erhwenkuo",
+      "new_trial_status": "proposed_only",
+      "existing_integration": null,
+      "evidence": {
+        "profile": "erhwenkuo",
+        "url": "https://github.com/erhwenkuo",
+        "domains": [
+          "Cloud-native learning examples",
+          "MCP search adapters",
+          "Agent storage backends",
+          "Keras and computer-vision notebooks"
+        ],
+        "repositories": [
+          {
+            "repository": "erhwenkuo/deepagents-filesystem-example",
+            "url": "https://github.com/erhwenkuo/deepagents-filesystem-example",
+            "fork": false,
+            "parent": null,
+            "description": "Deep Agents example showcasing virtual filesystem backends",
+            "default_branch": "main",
+            "archived": false,
+            "github_license": "MIT",
+            "pushed_at": "2026-03-26T02:14:50Z",
+            "head": {
+              "sha": "1238bd3f04a61d39b49f143049889bf1798bfffd",
+              "committed_at": "2026-03-26T02:14:43Z",
+              "url": "https://github.com/erhwenkuo/deepagents-filesystem-example/commit/1238bd3f04a61d39b49f143049889bf1798bfffd"
+            },
+            "root_paths": [
+              ".env.example",
+              ".gitignore",
+              "CLAUDE.md",
+              "LICENSE",
+              "PLAN.md",
+              "README.md",
+              "README_ZH-TW.md",
+              "agent_cli.py",
+              "backends",
+              "docker-compose.yml",
+              "main.py",
+              "pyproject.toml",
+              "s3",
+              "seed.py"
+            ],
+            "licence_evidence": "MIT LICENSE file verified at HEAD.",
+            "provenance": "GitHub non-fork but README explicitly identifies a Python adaptation of christian-bromann/deepagents-filesystem-example.",
+            "source_urls": [
+              "https://github.com/erhwenkuo/deepagents-filesystem-example/blob/1238bd3f04a61d39b49f143049889bf1798bfffd/README.md",
+              "https://github.com/erhwenkuo/deepagents-filesystem-example/blob/1238bd3f04a61d39b49f143049889bf1798bfffd/backends/sqlite_backend.py",
+              "https://github.com/erhwenkuo/deepagents-filesystem-example/blob/1238bd3f04a61d39b49f143049889bf1798bfffd/LICENSE"
+            ]
+          },
+          {
+            "repository": "erhwenkuo/mcp-searxng",
+            "url": "https://github.com/erhwenkuo/mcp-searxng",
+            "fork": false,
+            "parent": null,
+            "description": "About 一個用來讓 AI Agent 可透過 SearXNG 服務來搜尋外部網站內容與資訊的 MCP server 。",
+            "default_branch": "main",
+            "archived": false,
+            "github_license": "MIT",
+            "pushed_at": "2026-04-16T00:06:12Z",
+            "head": {
+              "sha": "779409b8d8ccba9307383187bf337809dc7d70b1",
+              "committed_at": "2026-04-16T00:06:12Z",
+              "url": "https://github.com/erhwenkuo/mcp-searxng/commit/779409b8d8ccba9307383187bf337809dc7d70b1"
+            },
+            "root_paths": [
+              ".gitignore",
+              ".python-version",
+              "Dockerfile",
+              "LICENSE",
+              "README.md",
+              "README_TW.md",
+              "docker-compose.yaml",
+              "mcp_searxng.png",
+              "pyproject.toml",
+              "searxng-docker",
+              "server.py",
+              "test_web_search.png",
+              "test_web_url_read.png",
+              "uv.lock"
+            ],
+            "licence_evidence": "MIT LICENSE file verified at HEAD.",
+            "provenance": "Non-fork MCP adapter to SearXNG, with markdownify for page conversion; not an original search engine.",
+            "source_urls": [
+              "https://github.com/erhwenkuo/mcp-searxng/blob/779409b8d8ccba9307383187bf337809dc7d70b1/server.py",
+              "https://github.com/erhwenkuo/mcp-searxng/blob/779409b8d8ccba9307383187bf337809dc7d70b1/LICENSE"
+            ]
+          },
+          {
+            "repository": "erhwenkuo/deep-learning-with-keras-notebooks",
+            "url": "https://github.com/erhwenkuo/deep-learning-with-keras-notebooks",
+            "fork": false,
+            "parent": null,
+            "description": "Jupyter notebooks for using & learning Keras",
+            "default_branch": "master",
+            "archived": false,
+            "github_license": null,
+            "pushed_at": "2018-12-19T17:12:14Z",
+            "head": {
+              "sha": "3fd4973e0b30c437a7074f1f2e6ff7531bb37c15",
+              "committed_at": "2018-03-10T05:26:22Z",
+              "url": "https://github.com/erhwenkuo/deep-learning-with-keras-notebooks/commit/3fd4973e0b30c437a7074f1f2e6ff7531bb37c15"
+            },
+            "root_paths": [
+              "0.0-coco-dataset-api.ipynb",
+              "0.1-poker-cards-dataset.ipynb",
+              "0.2-image-processing-pillow.ipynb",
+              "1.0-image-augmentation.ipynb",
+              "1.1-keras-functional-api.ipynb",
+              "1.2-vgg16-from-scratch.ipynb",
+              "1.3-use-pretrained-model.ipynb",
+              "1.4-small-datasets-image-augmentation.ipynb",
+              "1.5-use-pretrained-model-2.ipynb",
+              "1.6-visualizing-what-convnets-learn.ipynb",
+              "1.7-autoencoder.ipynb",
+              "1.8-seq2seq-introduction.ipynb",
+              "1.9-onehot-encoding-introduction.ipynb",
+              "1.a-rnn-introduction.ipynb",
+              "1.b-lstm-return-sequences-states.ipynb",
+              "1.c-lstm-learn-alphabetic-seq.ipynb",
+              "2.0-first-steps-with-julia.ipynb",
+              "2.1-traffic-signs-recognition.ipynb",
+              "2.2-simpson-characters-recognition.ipynb",
+              "2.3-fashion-mnist-recognition.ipynb",
+              "2.4-facial-keypoints-recognition.ipynb",
+              "2.5-use-keras-break-captcha.ipynb",
+              "2.6-mnist-recognition-mlp.ipynb",
+              "2.7-mnist-recognition-cnn.ipynb",
+              "3.0-yolo-algorithm-introduction.ipynb",
+              "3.1-yolov2-object-detection.ipynb",
+              "3.2-yolov2-train_racoon_dataset.ipynb",
+              "3.3-yolov2-racoon_detection_inaction.ipynb",
+              "3.4-yolov2-train-kangaroo-dataset.ipynb",
+              "3.5-yolov2-train-hands-dataset.ipynb",
+              "3.6-yolov2-train-simpson-dataset.ipynb",
+              "3.7-yolov2-train-coco-dataset.ipynb",
+              "7.0-opencv-face-detection.ipynb",
+              "7.1-mtcnn-face-detection.ipynb",
+              "7.2-face-detect-align-and-crop.ipynb",
+              "7.3-face-embedding-and-classifier.ipynb",
+              "7.4-face-recognition.ipynb",
+              "7.5-face-landmarks-detection.ipynb",
+              "7.6-head-pose-estimation.ipynb",
+              "8.0-using-word-embeddings.ipynb",
+              "8.1-jieba-word-tokenizer.ipynb",
+              "8.2-word2vec-concept-introduction.ipynb",
+              "8.3-jieba-lyrics-analysis.ipynb",
+              "8.4-word2vec-with-gensim.ipynb",
+              "README.md",
+              "assets"
+            ],
+            "licence_evidence": "No GitHub-detected licence and no root LICENSE in inspected root listing. Per-notebook/source rights not exhaustively audited; concepts only pending rights clarification.",
+            "provenance": "Personal learning collection; GitHub non-fork is not proof all notebook material is original.",
+            "source_urls": [
+              "https://github.com/erhwenkuo/deep-learning-with-keras-notebooks/blob/3fd4973e0b30c437a7074f1f2e6ff7531bb37c15/README.md"
+            ]
+          },
+          {
+            "repository": "erhwenkuo/langgraph-101",
+            "fork": true,
+            "parent": "langchain-ai/langgraph-101",
+            "github_license": "MIT",
+            "evidence_url": "https://api.github.com/repos/erhwenkuo/langgraph-101"
+          }
+        ],
+        "lessons": [
+          {
+            "pattern": "Route heterogeneous storage through an explicit interface and path prefixes.",
+            "evidence": "Deep Agents example maps /docs to S3, /memories to SQLite and /workspace to local outputs.",
+            "atlas_adaptation": "Keep existing Atlas evidence collections in their own stores; provide narrow read adapters rather than copying everything into agent prompts.",
+            "source_url": "https://github.com/erhwenkuo/deepagents-filesystem-example/blob/1238bd3f04a61d39b49f143049889bf1798bfffd/README.md"
+          },
+          {
+            "pattern": "Enforce read-only access at the operation boundary.",
+            "evidence": "SQLiteBackend rejects write, edit and upload operations and exposes offset/limit reading.",
+            "atlas_adaptation": "Require evidence readers to reject mutations in contract tests, while allowing output only in a distinct workspace.",
+            "source_url": "https://github.com/erhwenkuo/deepagents-filesystem-example/blob/1238bd3f04a61d39b49f143049889bf1798bfffd/backends/sqlite_backend.py"
+          },
+          {
+            "pattern": "Separate discovery results from source retrieval, then test bounds rather than assuming them.",
+            "evidence": "mcp-searxng has distinct web_search and web_url_read tools; SearchResult preserves URL/title/content. Static inspection: count=0 never reaches index==count-1 and therefore can return all results. URL reading has timeouts/redirect limits but no explicit private-address exclusion in the inspected function.",
+            "atlas_adaptation": "Use structured source receipts and test negative/zero counts, bounded response bytes and URL policy in any future Atlas adapter. These are static observations, not executed vulnerability tests.",
+            "source_url": "https://github.com/erhwenkuo/mcp-searxng/blob/779409b8d8ccba9307383187bf337809dc7d70b1/server.py"
+          }
+        ],
+        "bounded_atlas_use": {
+          "status": "proposal_only",
+          "name": "Read-only evidence backend contract fixture",
+          "target": "Existing Colibri Atlas evidence replay / Maintenance 50 tests",
+          "scope": "Two local fixtures exposed through Atlas-owned read interfaces, with read pagination and mutation rejection tests; no Deep Agents install, cloud storage, model calls or live searching.",
+          "acceptance": [
+            "Reading a permitted fixture returns deterministic content and source digest.",
+            "Write/edit/upload attempts are rejected without changing input.",
+            "Unknown paths and out-of-range/negative limits have explicit tested outcomes."
+          ],
+          "cost": "No paid services or new runtime dependencies required."
+        }
+      }
+    },
+    {
+      "handle": "eastroots92",
+      "profile_url": "https://github.com/eastroots92",
+      "new_trial_status": "proposed_only",
+      "existing_integration": null,
+      "evidence": {
+        "profile": "eastroots92",
+        "url": "https://github.com/eastroots92",
+        "domains": [
+          "Android journalling applications",
+          "Unity AR teaching applications",
+          "React/TypeScript architecture examples",
+          "Korean public-property-data MCP integration through an upstream fork"
+        ],
+        "repositories": [
+          {
+            "repository": "eastroots92/DailyQT",
+            "fork": false,
+            "parent": null,
+            "description": "Android application for recording daily Bible passages.",
+            "head": {
+              "sha": "b7ec48bdcdc3af341945287787d3095039a97f51",
+              "committed_at": "2018-03-27T00:01:47Z"
+            },
+            "default_branch": "master",
+            "archived": false,
+            "licence_evidence": "No licence in complete recursive tree; no GitHub-detected licence.",
+            "source_urls": [
+              "https://github.com/eastroots92/DailyQT/blob/b7ec48bdcdc3af341945287787d3095039a97f51/app/src/main/java/openull/com/dailyqt/ui/main/MainPresenter.java"
+            ]
+          },
+          {
+            "repository": "eastroots92/GAZUAA_Coin",
+            "fork": false,
+            "parent": null,
+            "description": "Rails cryptocurrency portfolio/notification application; README contains a historical bug-fix list.",
+            "head": {
+              "sha": "9d8c4ff56bfb7f1dc0aa965546b2c06f033ce701",
+              "committed_at": "2018-10-11T10:52:52Z"
+            },
+            "default_branch": "master",
+            "archived": false,
+            "licence_evidence": "No root licence and no package.json licence declaration. Not cleared for copying.",
+            "source_urls": [
+              "https://github.com/eastroots92/GAZUAA_Coin/blob/9d8c4ff56bfb7f1dc0aa965546b2c06f033ce701/README.md"
+            ]
+          },
+          {
+            "repository": "eastroots92/AR_NursingTechnique_Game_Client",
+            "fork": false,
+            "parent": null,
+            "description": "Unity AR nursing-technique game client.",
+            "head": {
+              "sha": "16cff244bfd1837e2da9b354292e87e12edeb897",
+              "committed_at": "2018-08-06T04:32:47Z"
+            },
+            "default_branch": "master",
+            "archived": false,
+            "licence_evidence": "No licence in complete recursive tree; bundled third-party assets need separate provenance review.",
+            "source_urls": [
+              "https://github.com/eastroots92/AR_NursingTechnique_Game_Client/blob/16cff244bfd1837e2da9b354292e87e12edeb897/README.md"
+            ]
+          },
+          {
+            "repository": "eastroots92/real-estate-mcp",
+            "fork": true,
+            "parent": "tae0y/real-estate-mcp",
+            "description": "Korean property-data MCP server using government APIs. Credit upstream tae0y.",
+            "head": {
+              "sha": "030a16d84b786028fef56806c8094a4c59d100ef",
+              "committed_at": "2026-02-19T13:27:55Z"
+            },
+            "default_branch": "main",
+            "archived": false,
+            "licence_evidence": "MIT verified in root LICENSE, copyright 2026 tae0y.",
+            "source_urls": [
+              "https://github.com/eastroots92/real-estate-mcp/blob/030a16d84b786028fef56806c8094a4c59d100ef/LICENSE",
+              "https://github.com/eastroots92/real-estate-mcp/blob/030a16d84b786028fef56806c8094a4c59d100ef/tests/mcp_server/test_apartment_trades.py"
+            ]
+          },
+          {
+            "repository": "eastroots92/web-clean-architecture",
+            "fork": true,
+            "parent": "gpeddler/web-clean-architecture",
+            "description": "Devfest 2017 TypeScript clean-architecture example.",
+            "head": {
+              "sha": "c678101e751b317a4965216f02a92c255b3850a7",
+              "committed_at": "2017-11-12T07:29:24Z"
+            },
+            "default_branch": "master",
+            "archived": false,
+            "licence_evidence": "MIT declared in package.json; no licence in complete recursive tree; GitHub licence null.",
+            "source_urls": [
+              "https://github.com/eastroots92/web-clean-architecture/blob/c678101e751b317a4965216f02a92c255b3850a7/package.json",
+              "https://github.com/eastroots92/web-clean-architecture/blob/c678101e751b317a4965216f02a92c255b3850a7/src/domain/use-cases/user/search-users.ts"
+            ]
+          },
+          {
+            "repository": "eastroots92/react-clean-architecture",
+            "fork": true,
+            "parent": "eduardomoroni/react-clean-architecture",
+            "description": "React and React Native architecture examples.",
+            "head": {
+              "sha": "a08e39ef5733f64d7518839da1763a29f10c7be5",
+              "committed_at": "2019-07-18T10:44:39Z"
+            },
+            "default_branch": "master",
+            "archived": false,
+            "licence_evidence": "Root package.json declares MIT and eduardomoroni as author. No root licence; nested native-app licences require scope review.",
+            "source_urls": [
+              "https://github.com/eastroots92/react-clean-architecture/blob/a08e39ef5733f64d7518839da1763a29f10c7be5/package.json"
+            ]
+          }
+        ],
+        "lessons": [
+          {
+            "pattern": "Separate domain operations from infrastructure using dependency interfaces.",
+            "evidence": "SearchUsers receives a UserRepositoryType through its constructor and delegates via that interface.",
+            "attribution": "gpeddler/web-clean-architecture via Eastroots's fork",
+            "atlas_adaptation": "Keep source adapters outside evidence rules and test rules with deterministic local fixtures.",
+            "source_url": "https://github.com/eastroots92/web-clean-architecture/blob/c678101e751b317a4965216f02a92c255b3850a7/src/domain/use-cases/user/search-users.ts"
+          },
+          {
+            "pattern": "Test domain semantics and distinct failure categories using fixture-backed responses.",
+            "evidence": "Property MCP tests mock HTTP with respx, exclude cancelled trades, parse comma-formatted amounts/dates, verify summaries and distinguish no-data, timeout and missing-key outcomes. Inspected, not independently executed.",
+            "attribution": "tae0y/real-estate-mcp via Eastroots's fork",
+            "atlas_adaptation": "Exercise cancelled, malformed, absent and unavailable records rather than only successful payloads.",
+            "source_url": "https://github.com/eastroots92/real-estate-mcp/blob/030a16d84b786028fef56806c8094a4c59d100ef/tests/mcp_server/test_apartment_trades.py"
+          },
+          {
+            "pattern": "Check declared behaviours against contrasting inputs to detect scaffolding.",
+            "evidence": "DailyQT MainPresenter.calcDate accepts a date but contains TODO and returns constant zero.",
+            "attribution": "Eastroots's non-fork DailyQT repository",
+            "atlas_adaptation": "Require acceptance fixtures that reject a constant placeholder implementation for claimed behaviour.",
+            "source_url": "https://github.com/eastroots92/DailyQT/blob/b7ec48bdcdc3af341945287787d3095039a97f51/app/src/main/java/openull/com/dailyqt/ui/main/MainPresenter.java"
+          }
+        ],
+        "bounded_atlas_use": {
+          "status": "proposal_only",
+          "name": "Local public-data evidence contract fixtures",
+          "target": "Existing Atlas evidence/replay suite",
+          "scope": "Original synthetic valid, cancelled, missing-field and provider-error records through an injected local adapter; verify filtering, no-data/error distinction, source/query provenance and stable replay. Include constant-output negative control.",
+          "acceptance": [
+            "Cancelled records excluded.",
+            "Missing source data differs from provider failure.",
+            "Source and query identity remain attached.",
+            "Constant placeholder output fails fixture expectations."
+          ],
+          "cost": "No API key, external requests, model call, code copying or new service."
+        },
+        "limitations": [
+          "Selected non-fork heads date from 2018; no current-maintenance claim justified.",
+          "The February 2026 real-estate fork head does not establish Eastroots authorship.",
+          "Profile pins not checked; listed hashes are default-branch HEAD pins."
+        ]
+      }
+    },
+    {
+      "handle": "nickliqian",
+      "profile_url": "https://github.com/nickliqian",
+      "new_trial_status": "proposed_only",
+      "existing_integration": null,
+      "evidence": {
+        "profile": "nickliqian",
+        "url": "https://github.com/nickliqian",
+        "domains": [
+          "Image recognition and OCR",
+          "Data validation and model evaluation",
+          "Deployment wrappers",
+          "Quantitative-trading development skill documentation"
+        ],
+        "repositories": [
+          {
+            "repository": "nickliqian/paddle_ocr_engine",
+            "url": "https://github.com/nickliqian/paddle_ocr_engine",
+            "fork": false,
+            "parent": null,
+            "description": "飞桨paddle ocr部署脚本",
+            "default_branch": "main",
+            "archived": false,
+            "github_license": "Apache-2.0",
+            "pushed_at": "2021-08-08T13:10:14Z",
+            "head": {
+              "sha": "38e51acf1bf1335d2cd83da9b7bfa30ef0c9b60c",
+              "committed_at": "2021-08-08T13:10:02Z",
+              "url": "https://github.com/nickliqian/paddle_ocr_engine/commit/38e51acf1bf1335d2cd83da9b7bfa30ef0c9b60c"
+            },
+            "root_paths": [
+              ".gitignore",
+              "LICENSE",
+              "README.md",
+              "doc",
+              "docker",
+              "function.py",
+              "img",
+              "requirements.txt",
+              "server_results",
+              "test_ocr.py"
+            ],
+            "licence_evidence": "Apache-2.0 LICENSE verified at HEAD.",
+            "provenance": "Non-fork deployment wrapper; README says it improves official PaddleOCR deployment scripts. Do not credit the underlying OCR model as original.",
+            "source_urls": [
+              "https://github.com/nickliqian/paddle_ocr_engine/blob/38e51acf1bf1335d2cd83da9b7bfa30ef0c9b60c/README.md",
+              "https://github.com/nickliqian/paddle_ocr_engine/blob/38e51acf1bf1335d2cd83da9b7bfa30ef0c9b60c/test_ocr.py",
+              "https://github.com/nickliqian/paddle_ocr_engine/blob/38e51acf1bf1335d2cd83da9b7bfa30ef0c9b60c/LICENSE"
+            ]
+          },
+          {
+            "repository": "nickliqian/cnn_captcha",
+            "url": "https://github.com/nickliqian/cnn_captcha",
+            "fork": false,
+            "parent": null,
+            "description": "use cnn recognize captcha by tensorflow. 本项目针对字符型图片验证码，使用tensorflow实现卷积神经网络，进行验证码识别。",
+            "default_branch": "master",
+            "archived": false,
+            "github_license": "Apache-2.0",
+            "pushed_at": "2022-12-08T05:22:24Z",
+            "head": {
+              "sha": "2a3353ef0f25f6faaa582bcde224dad0987087f4",
+              "committed_at": "2019-08-20T08:38:45Z",
+              "url": "https://github.com/nickliqian/cnn_captcha/commit/2a3353ef0f25f6faaa582bcde224dad0987087f4"
+            },
+            "root_paths": [
+              ".gitignore",
+              "LICENSE",
+              "README.md",
+              "cnnlib",
+              "conf",
+              "gen_sample_by_captcha.py",
+              "readme_image",
+              "recognize_local.py",
+              "recognize_online.py",
+              "recognize_time_test.py",
+              "requirements.txt",
+              "test_batch.py",
+              "tools",
+              "train_model.py",
+              "verify_and_split_data.py",
+              "webserver_captcha_image.py",
+              "webserver_recognize_api.py"
+            ],
+            "licence_evidence": "Apache-2.0 LICENSE verified at HEAD.",
+            "provenance": "Non-fork TensorFlow character-recognition project; useful audit lessons concern validation and evaluation, not bypassing third-party access controls.",
+            "source_urls": [
+              "https://github.com/nickliqian/cnn_captcha/blob/2a3353ef0f25f6faaa582bcde224dad0987087f4/README.md",
+              "https://github.com/nickliqian/cnn_captcha/blob/2a3353ef0f25f6faaa582bcde224dad0987087f4/verify_and_split_data.py",
+              "https://github.com/nickliqian/cnn_captcha/blob/2a3353ef0f25f6faaa582bcde224dad0987087f4/LICENSE"
+            ]
+          },
+          {
+            "repository": "nickliqian/tdxquant",
+            "url": "https://github.com/nickliqian/tdxquant",
+            "fork": false,
+            "parent": null,
+            "description": "TdxQuant Claude Code Skill - 通达信量化策略开发助手",
+            "default_branch": "master",
+            "archived": false,
+            "github_license": null,
+            "pushed_at": "2026-04-18T18:30:10Z",
+            "head": {
+              "sha": "0f3acd1ba21f824fe26cab821d18b05aefca31cd",
+              "committed_at": "2026-04-18T18:27:11Z",
+              "url": "https://github.com/nickliqian/tdxquant/commit/0f3acd1ba21f824fe26cab821d18b05aefca31cd"
+            },
+            "root_paths": [
+              "README.md",
+              "SKILL.md",
+              "references",
+              "tdxpng"
+            ],
+            "licence_evidence": "GitHub licence null; no root LICENSE file; README explicitly declares MIT License. Distinguish this declaration from verified complete licence text.",
+            "provenance": "Non-fork skill documentation built around the external tqcenter API; trading functionality is not suitable for an automatically enabled Atlas integration.",
+            "source_urls": [
+              "https://github.com/nickliqian/tdxquant/blob/0f3acd1ba21f824fe26cab821d18b05aefca31cd/README.md"
+            ]
+          },
+          {
+            "repository": "nickliqian/PaddleOCR",
+            "fork": true,
+            "parent": "PaddlePaddle/PaddleOCR",
+            "github_license": "Apache-2.0",
+            "evidence_url": "https://api.github.com/repos/nickliqian/PaddleOCR"
+          }
+        ],
+        "lessons": [
+          {
+            "pattern": "Preserve confidence and spatial provenance with extracted text.",
+            "evidence": "paddle_ocr_engine examples emit text, confidence and text_region polygons and save a visual overlay.",
+            "atlas_adaptation": "Store OCR text as a candidate observation linked to the page/region and source digest; retain uncertainty rather than promoting it directly to a verified quotation.",
+            "source_url": "https://github.com/nickliqian/paddle_ocr_engine/blob/38e51acf1bf1335d2cd83da9b7bfa30ef0c9b60c/README.md"
+          },
+          {
+            "pattern": "Validate input properties before splitting or processing.",
+            "evidence": "cnn_captcha checks suffix, filename labels, image readability and exact dimensions before separating train/test data. The routine uses random selection and moves files, so it is not itself a reproducible immutable dataset pipeline.",
+            "atlas_adaptation": "Apply original immutable manifest validation to Atlas fixture inputs with deterministic splits and no source mutation.",
+            "source_url": "https://github.com/nickliqian/cnn_captcha/blob/2a3353ef0f25f6faaa582bcde224dad0987087f4/verify_and_split_data.py"
+          },
+          {
+            "pattern": "Report held-out performance separately from training success and preserve benchmark conditions.",
+            "evidence": "The README reports perfect training-set accuracy alongside much lower held-out performance, and distinguishes inference time from request overhead. These are historical author-reported measurements, not current reproduced results.",
+            "atlas_adaptation": "Atlas evaluation receipts should identify dataset split, sample count, environment and separately measured processing/transport time.",
+            "source_url": "https://github.com/nickliqian/cnn_captcha/blob/2a3353ef0f25f6faaa582bcde224dad0987087f4/README.md"
+          }
+        ],
+        "bounded_atlas_use": {
+          "status": "proposal_only",
+          "name": "OCR observation receipt validation",
+          "target": "Existing Atlas research evidence / replay fixtures",
+          "scope": "Use hand-authored local JSON OCR observations, not upstream images, model weights or a deployed service. Validate source digest, page/region, confidence range and uncertain-text status; no financial integration.",
+          "acceptance": [
+            "Valid fixture retains confidence and bounding polygon with its source hash.",
+            "Out-of-range confidence and malformed/out-of-page polygons fail.",
+            "Low-confidence text stays explicitly unverified.",
+            "Changing the source digest invalidates a replay receipt."
+          ],
+          "cost": "No paid OCR, GPU, external requests or new service required."
+        }
+      }
+    },
+    {
+      "handle": "SeanChenxy",
+      "profile_url": "https://github.com/SeanChenxy",
+      "new_trial_status": "proposed_only",
+      "existing_integration": null,
+      "evidence": {
+        "profile": "https://github.com/SeanChenxy",
+        "audited_on": "2026-11-14",
+        "scope": "Selected primary-source, read-only audit of three research implementations. No models, datasets or GPU training were downloaded or executed; no forks or upstream posts.",
+        "identity": "Profile displays 陈星宇; paper citations identify Xingyu Chen. Repository work is coauthored and incorporates acknowledged upstream components.",
+        "repositories": [
+          {
+            "name": "SeanChenxy/HandMesh",
+            "head_sha": "3c87e958d4855f890e3884ec94bcfc0f99422c3d",
+            "head_date": "2023-11-03T03:37:51Z",
+            "archived": false,
+            "github_fork": false,
+            "purpose": "CMR and MobRecon hand-mesh reconstruction implementation.",
+            "provenance": "README attributes SpiralConv to sw-gong/spiralnet_plus and credits hand-graph-cnn, I2L-MeshNet_RELEASE, detectron2 and smplpytorch. GitHub non-fork status does not establish wholly original code.",
+            "licence": {
+              "root": "MIT, copyright 2021 chenxingyu",
+              "file_exception": "utils/zimeval.py retains Christian Zimmermann's copyright and GPL-2.0-or-later notice; do not classify the whole tree as uniformly MIT.",
+              "assets": "README separately requires acceptance of the MANO licence and external datasets/models."
+            },
+            "inspected_code": [
+              {
+                "path": "mobrecon/models/loss.py",
+                "finding": "contrastive_loss_3d rotates paired vertex predictions using augmentation-angle differences before comparing them; contrastive_loss_2d transforms paired landmark predictions before comparison. Concrete lesson: test expected transformation consistency.",
+                "url": "https://github.com/SeanChenxy/HandMesh/blob/3c87e958d4855f890e3884ec94bcfc0f99422c3d/mobrecon/models/loss.py"
+              },
+              {
+                "path": "utils/zimeval.py",
+                "finding": "EvalUtil stores visible-keypoint errors and computes per-keypoint mean/median error and threshold-based PCK/AUC. get_measures skips unobserved keypoints, so metric coverage/denominator must be explicit. The file has a GPL-2.0-or-later header.",
+                "url": "https://github.com/SeanChenxy/HandMesh/blob/3c87e958d4855f890e3884ec94bcfc0f99422c3d/utils/zimeval.py"
+              }
+            ],
+            "sources": [
+              "https://github.com/SeanChenxy/HandMesh/blob/3c87e958d4855f890e3884ec94bcfc0f99422c3d/README.md",
+              "https://github.com/SeanChenxy/HandMesh/blob/3c87e958d4855f890e3884ec94bcfc0f99422c3d/LICENSE"
+            ]
+          },
+          {
+            "name": "SeanChenxy/HandAvatar",
+            "head_sha": "d7da7dfc5c2d341fce50624413b65fa6177d62d8",
+            "head_date": "2023-06-13T03:00:43Z",
+            "archived": false,
+            "github_fork": false,
+            "purpose": "Free-pose hand animation/rendering from monocular video, associated with the CVPR2023 paper.",
+            "provenance": "README explicitly bases the implementation on COAP, SMPLX and HumanNeRF; paper and root copyright list Xingyu Chen, Baoyuan Wang and Heung-Yeung Shum.",
+            "licence": {
+              "root": "MIT for the root licence; third-party subtrees and externally acquired MANO/InterHand assets require separate provenance and terms checks."
+            },
+            "inspected_code": [
+              {
+                "path": "handavatar/core/train/trainers/handavatar/trainer.py",
+                "finding": "Trainer divides loss by accum_iter, accumulates gradients and periodically steps the optimizer. Progress computes PSNR, LPIPS and SSIM, saves visual comparisons and can restore the initial checkpoint after detecting an empty rendering. Checkpoints include iteration, network state and optimizer state.",
+                "url": "https://github.com/SeanChenxy/HandAvatar/blob/d7da7dfc5c2d341fce50624413b65fa6177d62d8/handavatar/core/train/trainers/handavatar/trainer.py"
+              },
+              {
+                "path": "handavatar/core/train/trainers/handavatar/trainer.py",
+                "finding": "Static display defect candidate: lines458-465 enter the depth-output branch but assign depth from net_output['alpha'], not net_output['depth']. This affects the displayed diagnostic depth panel; not reproduced through a GPU execution and no upstream issue was filed.",
+                "url": "https://github.com/SeanChenxy/HandAvatar/blob/d7da7dfc5c2d341fce50624413b65fa6177d62d8/handavatar/core/train/trainers/handavatar/trainer.py#L458-L465"
+              }
+            ],
+            "sources": [
+              "https://github.com/SeanChenxy/HandAvatar/blob/d7da7dfc5c2d341fce50624413b65fa6177d62d8/README.md",
+              "https://github.com/SeanChenxy/HandAvatar/blob/d7da7dfc5c2d341fce50624413b65fa6177d62d8/LICENSE"
+            ],
+            "feasibility": "README describes more than32GB GPU memory for training. Immediate Atlas work should use synthetic CPU fixtures and adopt evaluation/checkpoint principles, rather than begin costly model training."
+          },
+          {
+            "name": "SeanChenxy/Mimic3D",
+            "head_sha": "77d313656df3cd5536d2c4c5766db3a56208eea6",
+            "head_date": "2023-07-25T02:39:28Z",
+            "archived": false,
+            "github_fork": false,
+            "purpose": "3D-aware GAN research implementation associated with the ICCV2023 paper.",
+            "provenance": "README explicitly states that code is adopted from NVIDIA EG3D. Paper/root copyright credit Xingyu Chen, Yu Deng and Baoyuan Wang.",
+            "licence": {
+              "root": "MIT",
+              "file_exception": "training/dual_triplane.py retains NVIDIA copyright and SPDX LicenseRef-NvidiaProprietary with an express-licence notice. Treat licensing as mixed/unresolved for reuse; a root MIT badge is insufficient."
+            },
+            "inspected_code": [
+              {
+                "path": "training/dual_triplane.py",
+                "finding": "DualTriPlaneGenerator separates mapping, synthesis, camera/ray generation and rendering. Its synthesis method optionally splits ray origins/directions into chunks and concatenates feature/depth/weight outputs; it also exposes full/coarse/detail variants and cached backbone use. Atlas lesson: make resource controls and evaluation variants explicit and test chunked-vs-whole equivalence.",
+                "url": "https://github.com/SeanChenxy/Mimic3D/blob/77d313656df3cd5536d2c4c5766db3a56208eea6/training/dual_triplane.py"
+              }
+            ],
+            "sources": [
+              "https://github.com/SeanChenxy/Mimic3D/blob/77d313656df3cd5536d2c4c5766db3a56208eea6/README.md",
+              "https://github.com/SeanChenxy/Mimic3D/blob/77d313656df3cd5536d2c4c5766db3a56208eea6/LICENSE"
+            ],
+            "feasibility": "README's example describes8GPUs and about40GB GPU memory, and permits metrics:[] to disable costly training evaluation. This is not a zero-spend immediate integration; any evaluation receipt must distinguish disabled metrics from passed metrics."
+          }
+        ],
+        "fork_checks": [
+          {
+            "repository": "SeanChenxy/manotorch",
+            "github_fork": true,
+            "parent": "lixiny/manotorch",
+            "source": "https://api.github.com/repos/SeanChenxy/manotorch"
+          },
+          {
+            "repository": "SeanChenxy/CPF",
+            "github_fork": true,
+            "parent": "lixiny/CPF",
+            "source": "https://api.github.com/repos/SeanChenxy/CPF"
+          }
+        ],
+        "maintenance": "All three representative repositories are unarchived, but their inspected default heads and repository pushes date to2023. This audit does not establish current supported-runtime compatibility or continued active maintenance.",
+        "atlas_application": {
+          "proposed_name": "Research evaluation receipt",
+          "status": "Proposal only; no implementation in this audit.",
+          "integration": "An original optional JSON receipt and validator beside Atlas's existing artifact verifier and research-source provenance work.",
+          "fields": [
+            "dataset/version and licence reference",
+            "model/checkpoint/config/source commit and exact-byte digests",
+            "metric name, unit, threshold, denominator and valid/total observations",
+            "evaluated, skipped, failed or unavailable status with reason",
+            "runtime/environment and resource limits",
+            "expected transformation or chunking invariants"
+          ],
+          "bounded_first_step": "Validate synthetic CPU-only result fixtures: missing required metric fails, empty observations cannot pass, partial coverage stays visible, disabled evaluation is reported as skipped, and declared units/thresholds remain attached. No GPU, model downloads, paid APIs or new production dependency.",
+          "benefit": "Makes model/research claims inspectable and prevents missing evaluation from being mistaken for evidence of success.",
+          "limits": "Does not establish scientific novelty, reproduce paper results, assess model accuracy, or certify third-party licensing."
+        },
+        "evidence_limits": [
+          "Selected-file static inspection, not a complete repository audit.",
+          "Readme performance/hardware claims were not independently benchmarked.",
+          "No claim that GitHub non-fork status means sole authorship.",
+          "No upstream source code copied."
+        ]
+      }
+    },
+    {
+      "handle": "ZhuLinsen",
+      "profile_url": "https://github.com/ZhuLinsen",
+      "new_trial_status": "proposed_only",
+      "existing_integration": null,
+      "evidence": {
+        "profile": "https://github.com/ZhuLinsen",
+        "audited_on": "2026-11-14",
+        "scope": "Three selected non-fork projects inspected through pinned code, licence files and tests. No services started, accounts connected, model calls, dataset uploads, forks or upstream posts.",
+        "repositories": [
+          {
+            "name": "ZhuLinsen/patchloop",
+            "head_sha": "03eb09b2248b60be2205dee6db33e2a80f20aae6",
+            "head_date": "2026-06-24T14:11:41Z",
+            "archived": false,
+            "github_fork": false,
+            "licence": "Apache-2.0, root LICENSE inspected",
+            "purpose": "Local GitHub issue/review/patch repair automation, described as extracted from daily_stock_analysis automation.",
+            "inspected_code": [
+              {
+                "path": "autocode/agent/execution_policy.py",
+                "finding": "Separates hard rejection reasons from approval reasons. Explicit commands and owner-authored non-feature tasks can supply authorisation; features retain separate handling. Blocked paths and publish-target policy are separate checks. Tests cover these distinctions.",
+                "url": "https://github.com/ZhuLinsen/patchloop/blob/03eb09b2248b60be2205dee6db33e2a80f20aae6/autocode/agent/execution_policy.py"
+              },
+              {
+                "path": "autocode/agent/autocode_state_store.py",
+                "finding": "Task claims record lease_owner, attempt count and start time. Failures move to retry_waiting or dead_letter; running tasks can be recovered. State uses an instance-local threading.Lock and temporary-file os.replace persistence.",
+                "url": "https://github.com/ZhuLinsen/patchloop/blob/03eb09b2248b60be2205dee6db33e2a80f20aae6/autocode/agent/autocode_state_store.py"
+              },
+              {
+                "path": "autocode/agent/task_queue.py",
+                "finding": "Queue wrapper exposes enqueue, claim, success, failure, retry and recovery, with bounded attempts by default. This makes recovery behaviour an explicit contract.",
+                "url": "https://github.com/ZhuLinsen/patchloop/blob/03eb09b2248b60be2205dee6db33e2a80f20aae6/autocode/agent/task_queue.py"
+              }
+            ],
+            "atlas_boundary": "Useful design for Maintenance50, but the inspected JSON state store is not a demonstrated multi-process coordinator. Independently running agents must not share it without transactional claims, owner checks/fencing and competing-worker tests. No claim that50workers or production safety were validated.",
+            "sources": [
+              "https://github.com/ZhuLinsen/patchloop/blob/03eb09b2248b60be2205dee6db33e2a80f20aae6/README.md",
+              "https://github.com/ZhuLinsen/patchloop/blob/03eb09b2248b60be2205dee6db33e2a80f20aae6/LICENSE",
+              "https://github.com/ZhuLinsen/patchloop/blob/03eb09b2248b60be2205dee6db33e2a80f20aae6/autocode/tests/test_execution_policy.py"
+            ]
+          },
+          {
+            "name": "ZhuLinsen/MiniAgent",
+            "head_sha": "25d87daff9a789713cb4aa56b4b689a6ebcb48cb",
+            "head_date": "2026-10-18T14:10:06Z",
+            "archived": false,
+            "github_fork": false,
+            "licence": "Apache-2.0, root LICENSE inspected",
+            "purpose": "Alpha agent harness with replaceable loop, plugins, managed tools and resumable sessions.",
+            "inspected_code": [
+              {
+                "path": "miniagent/agent.py",
+                "finding": "Agent loop has a maximum step count, rejects missing/reused tool-call IDs, requires object arguments and records tool-start events. If a non-read tool raises after starting, it records uncertain effects and stops for inspection rather than blindly continuing.",
+                "url": "https://github.com/ZhuLinsen/MiniAgent/blob/25d87daff9a789713cb4aa56b4b689a6ebcb48cb/miniagent/agent.py"
+              },
+              {
+                "path": "miniagent/tools/registry.py",
+                "finding": "Rejects duplicate tools; validates parameter JSON Schema at registration and arguments before execution, then authorises through Policy before the executor runs.",
+                "url": "https://github.com/ZhuLinsen/MiniAgent/blob/25d87daff9a789713cb4aa56b4b689a6ebcb48cb/miniagent/tools/registry.py"
+              },
+              {
+                "path": "miniagent/policy.py",
+                "finding": "Defines readonly/confirm/trusted modes, resolves managed file paths inside a workspace and restricts sensitive file patterns. Its docstring expressly states that arbitrary shell/plugins are not isolated.",
+                "url": "https://github.com/ZhuLinsen/MiniAgent/blob/25d87daff9a789713cb4aa56b4b689a6ebcb48cb/miniagent/policy.py"
+              }
+            ],
+            "atlas_boundary": "Adopt the tool-state contract and test with a fake backend. Permission checks and plugin hooks must not be represented as an operating-system sandbox.",
+            "sources": [
+              "https://github.com/ZhuLinsen/MiniAgent/blob/25d87daff9a789713cb4aa56b4b689a6ebcb48cb/README_EN.md",
+              "https://github.com/ZhuLinsen/MiniAgent/blob/25d87daff9a789713cb4aa56b4b689a6ebcb48cb/LICENSE"
+            ]
+          },
+          {
+            "name": "ZhuLinsen/FastDatasets",
+            "head_sha": "1e60ff848a736c0cec809871ad7ca78436064825",
+            "head_date": "2025-08-31T06:19:20Z",
+            "archived": false,
+            "github_fork": false,
+            "licence": "Apache-2.0, root LICENSE inspected",
+            "purpose": "Document-to-question/answer training-data generation and export.",
+            "inspected_code": [
+              {
+                "path": "app/core/dataset.py",
+                "finding": "Carries chunk_id, file, content and summary into generated question records; tracks answer failures and filters error-marked samples before returning the dataset. This retains useful source lineage, but generated answers are not independent evidence of truth.",
+                "url": "https://github.com/ZhuLinsen/FastDatasets/blob/1e60ff848a736c0cec809871ad7ca78436064825/app/core/dataset.py"
+              },
+              {
+                "path": "app/core/dataset.py",
+                "finding": "Static empty-generation failure: if chunks are nonempty but all question-generation calls yield[], total_questions=0 and batch_size=0, then total_batches divides by batch_size at line234. Add an explicit zero-question outcome instead of allowing a crash. Not executed against an LLM.",
+                "url": "https://github.com/ZhuLinsen/FastDatasets/blob/1e60ff848a736c0cec809871ad7ca78436064825/app/core/dataset.py#L215-L235"
+              },
+              {
+                "path": "app/services/dataset_service.py",
+                "finding": "TextSplitter uses headings and sentence boundaries with nominal min/max lengths. A single sentence longer than max_len can append an empty chunk then retain the oversized sentence, so max_len is not a proven hard bound. Test long punctuation-free input before reuse.",
+                "url": "https://github.com/ZhuLinsen/FastDatasets/blob/1e60ff848a736c0cec809871ad7ca78436064825/app/services/dataset_service.py"
+              }
+            ],
+            "atlas_boundary": "For legal/research training examples, preserve source hashes and pinpoint spans, quarantine generated suggestions, reject empty/error outputs and keep validation cases separate from training. Do not present synthetic answers as verified scholarship.",
+            "sources": [
+              "https://github.com/ZhuLinsen/FastDatasets/blob/1e60ff848a736c0cec809871ad7ca78436064825/README_en.md",
+              "https://github.com/ZhuLinsen/FastDatasets/blob/1e60ff848a736c0cec809871ad7ca78436064825/LICENSE"
+            ]
+          }
+        ],
+        "fork_checks": [
+          {
+            "repository": "ZhuLinsen/vllm",
+            "github_fork": true,
+            "parent": "vllm-project/vllm",
+            "source": "https://api.github.com/repos/ZhuLinsen/vllm"
+          },
+          {
+            "repository": "ZhuLinsen/langchain",
+            "github_fork": true,
+            "parent": "langchain-ai/langchain",
+            "source": "https://api.github.com/repos/ZhuLinsen/langchain"
+          }
+        ],
+        "maintenance": "Selected heads are June2026 for PatchLoop, October2026 for MiniAgent and August2025 for FastDatasets. All are unarchived. Dates do not establish bug-free operation or compatibility.",
+        "atlas_application": {
+          "proposed_name": "Maintenance execution and recovery contract",
+          "status": "Proposal only, not deployed or implemented in this audit.",
+          "bounded_first_step": "Original stdlib state-machine fixtures: duplicate dispatch IDs do not execute twice; an interrupted external effect becomes uncertain; a stale worker cannot complete another worker's claim; retries stop at a declared cap; an expired claim is recoverable; schema-invalid arguments never reach an executor.",
+          "integration": "Connect contract receipts to Opsbook's accepted checks and incident timeline. Use fake tools and temporary local state; no GitHub writes, credentials, model calls or daemon required.",
+          "next_gate": "Before a50-agent rollout, establish transactional shared state, single-owner/fencing semantics, idempotent effects and measured concurrency limits. The selected upstream repositories do not themselves prove that deployment."
+        },
+        "evidence_limits": [
+          "Static selected-source audit; upstream test files were read but not executed.",
+          "No claim of full-tree licence audit or sole authorship from GitHub non-fork status.",
+          "No model-quality, investment-return or dataset-quality claim verified.",
+          "No upstream source code copied."
+        ]
+      }
+    },
+    {
+      "handle": "xahlee",
+      "profile_url": "https://github.com/xahlee",
+      "new_trial_status": "proposed_only",
+      "existing_integration": null,
+      "evidence": {
+        "profile": "https://github.com/xahlee",
+        "observed_focus": "Emacs editing tools and Wolfram Language mathematical packages.",
+        "inventory": "Search returned 10 non-fork repositories and one fork, xahlee/melpa. Three representative originals inspected below.",
+        "repositories": [
+          {
+            "name": "xahlee/xah-fly-keys",
+            "fork": false,
+            "archived": false,
+            "commit": "e526d025425776a47987369c490e26f33a8b35cf",
+            "head_commit_date": "2026-09-01T15:25:58Z",
+            "last_push": "2026-09-01T15:37:55Z",
+            "licence": {
+              "declared": "GPL v3",
+              "evidence": "Source header line 11. GitHub's licence field was null; no root licence file in inspected tree. Do not classify it as unlicensed solely from metadata.",
+              "reuse": "Learn the design method without copying GPL code into Atlas's MIT modules."
+            },
+            "sources": [
+              {
+                "path": "README.md",
+                "url": "https://github.com/xahlee/xah-fly-keys/blob/e526d025425776a47987369c490e26f33a8b35cf/README.md"
+              },
+              {
+                "path": "xah-fly-keys.el",
+                "url": "https://github.com/xahlee/xah-fly-keys/blob/e526d025425776a47987369c490e26f33a8b35cf/xah-fly-keys.el"
+              }
+            ]
+          },
+          {
+            "name": "xahlee/xah-wolfram-mode",
+            "fork": false,
+            "archived": false,
+            "commit": "113317d71684cff630c178553d4c2d2f42983b15",
+            "head_commit_date": "2026-03-07T03:47:03Z",
+            "last_push": "2026-03-07T03:47:11Z",
+            "licence": {
+              "declared": "MIT",
+              "evidence": "Full LICENSE.md inspected.",
+              "reuse": "Retain copyright and permission notice when reusing substantial portions."
+            },
+            "sources": [
+              {
+                "path": "LICENSE.md",
+                "url": "https://github.com/xahlee/xah-wolfram-mode/blob/113317d71684cff630c178553d4c2d2f42983b15/LICENSE.md"
+              },
+              {
+                "path": "xah-wolfram-mode.el",
+                "url": "https://github.com/xahlee/xah-wolfram-mode/blob/113317d71684cff630c178553d4c2d2f42983b15/xah-wolfram-mode.el"
+              },
+              {
+                "path": "README.md",
+                "url": "https://github.com/xahlee/xah-wolfram-mode/blob/113317d71684cff630c178553d4c2d2f42983b15/README.md"
+              }
+            ]
+          },
+          {
+            "name": "xahlee/PlaneCurveFormulas",
+            "fork": false,
+            "archived": false,
+            "commit": "b38da64fc7937a2c2244ba356e4bcac22e6a3705",
+            "head_commit_date": "2025-05-18T04:09:44Z",
+            "last_push": "2025-05-18T04:09:48Z",
+            "licence": {
+              "declared": "MIT",
+              "evidence": "Full LICENSE.txt inspected.",
+              "reuse": "Retain copyright and permission notice; Wolfram runtime availability must be checked separately."
+            },
+            "sources": [
+              {
+                "path": "LICENSE.txt",
+                "url": "https://github.com/xahlee/PlaneCurveFormulas/blob/b38da64fc7937a2c2244ba356e4bcac22e6a3705/LICENSE.txt"
+              },
+              {
+                "path": "PlaneCurveFormulas.wl",
+                "url": "https://github.com/xahlee/PlaneCurveFormulas/blob/b38da64fc7937a2c2244ba356e4bcac22e6a3705/PlaneCurveFormulas.wl"
+              },
+              {
+                "path": "README.md",
+                "url": "https://github.com/xahlee/PlaneCurveFormulas/blob/b38da64fc7937a2c2244ba356e4bcac22e6a3705/README.md"
+              }
+            ]
+          }
+        ],
+        "evidence": [
+          {
+            "fact": "xah-fly-keys describes modal command/insert states, leader-key help, selectable keyboard layouts and choices based on command frequency. The README credits a key-engine rewrite to other contributors.",
+            "source": "https://github.com/xahlee/xah-fly-keys/blob/e526d025425776a47987369c490e26f33a8b35cf/README.md",
+            "application": "Measure repeated maintenance actions before adding shortcuts; make modes and help discoverable. No claim that this is objectively the most efficient system."
+          },
+          {
+            "fact": "PlaneCurveFormulas defines named functions with usage documentation, parameter ranges and executable plotting examples.",
+            "source": "https://github.com/xahlee/PlaneCurveFormulas/blob/b38da64fc7937a2c2244ba356e4bcac22e6a3705/PlaneCurveFormulas.wl",
+            "application": "Give each Atlas maintenance command a compact contract: arguments, scope, expected artifact and a runnable example."
+          },
+          {
+            "fact": "xah-wolfram-mode offers separate region, line and buffer execution commands, documents optional inline results and requires a saved file for buffer execution.",
+            "source": "https://github.com/xahlee/xah-wolfram-mode/blob/113317d71684cff630c178553d4c2d2f42983b15/xah-wolfram-mode.el",
+            "application": "Keep review scope explicit and distinguish inspectable results from broader execution; do not silently expand a selected task to an entire ecosystem."
+          }
+        ],
+        "strongest_trial": {
+          "status": "proposed",
+          "name": "Executable command-reference checks",
+          "target": "Existing Atlas Opsbook CLI documentation and tests",
+          "scope": "For decision-context, incident-timeline and artifact-integrity, validate documented CLI examples against parser help and temporary fixtures; assert documented output files and exit codes. Reuse the self-documenting interface pattern, not upstream code.",
+          "acceptance": "Every documented example runs locally; stale flags and unsupported combinations fail a check; no new runtime service or Wolfram installation."
+        },
+        "limits": "Only representative source review performed. Performance/ergonomic superiority and complete mathematical correctness were not independently measured."
+      }
+    },
+    {
+      "handle": "helensouz",
+      "profile_url": "https://github.com/helensouz",
+      "new_trial_status": "proposed_only",
+      "existing_integration": null,
+      "evidence": {
+        "profile": "https://github.com/helensouz",
+        "observed_focus": "Public samples include Angular/TypeScript task interfaces and Java Spring/Express task APIs.",
+        "profile_source": "https://github.com/helensouz/helensouz/blob/9281b241c1c41170ed6c59e8979db65ce26820aa/README.md",
+        "profile_source_note": "Profile README is a 2025 self-description; not used to assert current employment or credentials.",
+        "inventory": "Search returned 43 non-fork repositories. Two comparatively recent task projects inspected below; older BlogPessoal README identifies a Java/Spring Boot exercise.",
+        "repositories": [
+          {
+            "name": "helensouz/task-flow",
+            "fork": false,
+            "archived": false,
+            "commit": "be49784fc061bf783a743279d2aea82c7dc56051",
+            "head_commit_date": "2026-03-25T03:47:33Z",
+            "last_push": "2026-03-25T03:47:30Z",
+            "licence": {
+              "declared": null,
+              "evidence": "GitHub licence field null; no root LICENSE/COPYING in complete inspected tree; root package.json has no licence field.",
+              "reuse": "Study patterns and create original fixtures. Do not copy/merge application code without licence clarification."
+            },
+            "sources": [
+              {
+                "path": "README.md",
+                "url": "https://github.com/helensouz/task-flow/blob/be49784fc061bf783a743279d2aea82c7dc56051/README.md"
+              },
+              {
+                "path": "package.json",
+                "url": "https://github.com/helensouz/task-flow/blob/be49784fc061bf783a743279d2aea82c7dc56051/package.json"
+              },
+              {
+                "path": "src/app/features/Task/task.service.ts",
+                "url": "https://github.com/helensouz/task-flow/blob/be49784fc061bf783a743279d2aea82c7dc56051/src/app/features/Task/task.service.ts"
+              },
+              {
+                "path": "src/app/features/Task/task-service.service.spec.ts",
+                "url": "https://github.com/helensouz/task-flow/blob/be49784fc061bf783a743279d2aea82c7dc56051/src/app/features/Task/task-service.service.spec.ts"
+              },
+              {
+                "path": "backend/index.js",
+                "url": "https://github.com/helensouz/task-flow/blob/be49784fc061bf783a743279d2aea82c7dc56051/backend/index.js"
+              }
+            ]
+          },
+          {
+            "name": "helensouz/taskflowdemo",
+            "fork": false,
+            "archived": false,
+            "commit": "804decf8f0c822c95b83f9fc6cab92646f0bfba5",
+            "head_commit_date": "2026-02-17T05:04:40Z",
+            "last_push": "2026-02-17T05:04:00Z",
+            "licence": {
+              "declared": null,
+              "evidence": "GitHub licence field null; no root licence file in complete inspected tree.",
+              "reuse": "Study interface design only pending licence clarification."
+            },
+            "sources": [
+              {
+                "path": "demo/src/main/java/controller/TaskController.java",
+                "url": "https://github.com/helensouz/taskflowdemo/blob/804decf8f0c822c95b83f9fc6cab92646f0bfba5/demo/src/main/java/controller/TaskController.java"
+              },
+              {
+                "path": "demo/src/test/java/taskflow/com/example/demo/TaskflowApplicationTests.java",
+                "url": "https://github.com/helensouz/taskflowdemo/blob/804decf8f0c822c95b83f9fc6cab92646f0bfba5/demo/src/test/java/taskflow/com/example/demo/TaskflowApplicationTests.java"
+              }
+            ]
+          }
+        ],
+        "evidence": [
+          {
+            "fact": "task-flow separates an Angular HTTP service from an Express backend. The service uses /new-task while the inspected backend registers /tasks.",
+            "sources": [
+              "https://github.com/helensouz/task-flow/blob/be49784fc061bf783a743279d2aea82c7dc56051/src/app/features/Task/task.service.ts",
+              "https://github.com/helensouz/task-flow/blob/be49784fc061bf783a743279d2aea82c7dc56051/backend/index.js"
+            ],
+            "application": "Check client/server route contracts together, including methods and error responses. This is a static mismatch finding, not a runtime test result."
+          },
+          {
+            "fact": "The task-flow service exports TaskService, while its inspected test imports TaskServiceService; getTaskById/updateTask/deleteTask are empty methods.",
+            "sources": [
+              "https://github.com/helensouz/task-flow/blob/be49784fc061bf783a743279d2aea82c7dc56051/src/app/features/Task/task.service.ts",
+              "https://github.com/helensouz/task-flow/blob/be49784fc061bf783a743279d2aea82c7dc56051/src/app/features/Task/task-service.service.spec.ts"
+            ],
+            "application": "Maintenance reports should distinguish scaffolding, present test files and verified behaviour; include type-checking and meaningful operation assertions."
+          },
+          {
+            "fact": "taskflowdemo exposes create/list/update/delete controller operations using constructor-injected TaskRepository. The inspected application test only loads the Spring context.",
+            "sources": [
+              "https://github.com/helensouz/taskflowdemo/blob/804decf8f0c822c95b83f9fc6cab92646f0bfba5/demo/src/main/java/controller/TaskController.java",
+              "https://github.com/helensouz/taskflowdemo/blob/804decf8f0c822c95b83f9fc6cab92646f0bfba5/demo/src/test/java/taskflow/com/example/demo/TaskflowApplicationTests.java"
+            ],
+            "application": "Use a small task lifecycle to teach end-to-end contracts; context startup alone does not establish CRUD correctness."
+          }
+        ],
+        "strongest_trial": {
+          "status": "proposed",
+          "name": "Task API contract teaching fixture",
+          "target": "Existing Atlas maintenance teaching cases",
+          "scope": "Write an original, dependency-free mock task API contract and client fixture demonstrating route mismatch, missing update behaviour and a happy path. No upstream code copying or deployment.",
+          "acceptance": "The good pair passes; mismatched path/method, unknown task and omitted update behaviour fail explicit checks. Record this as a teaching trial rather than production integration."
+        },
+        "limits": "No installation/build/runtime test performed. Findings concern inspected commits and files, not the person's ability or other projects."
+      }
+    },
+    {
+      "handle": "pbakaus",
+      "profile_url": "https://github.com/pbakaus",
+      "new_trial_status": "proposed_only",
+      "existing_integration": null,
+      "evidence": {
+        "profile": "https://github.com/pbakaus",
+        "observed_focus": "Agent-assisted interface design, review automation and browser visual effects.",
+        "inventory": "Search returned 21 non-fork repositories; three representative originals inspected below.",
+        "repositories": [
+          {
+            "name": "pbakaus/agent-reviews",
+            "fork": false,
+            "archived": false,
+            "commit": "5c85f14cad5d2233883f991faf9312ddc807c063",
+            "head_commit_date": "2026-10-15T22:13:49Z",
+            "last_push": "2026-11-14T01:29:33Z",
+            "licence": {
+              "declared": "MIT",
+              "evidence": "Full LICENSE inspected.",
+              "reuse": "Retain copyright and permission notice. Runtime/review posting capabilities need their own integration review."
+            },
+            "sources": [
+              {
+                "path": "LICENSE",
+                "url": "https://github.com/pbakaus/agent-reviews/blob/5c85f14cad5d2233883f991faf9312ddc807c063/LICENSE"
+              },
+              {
+                "path": "README.md",
+                "url": "https://github.com/pbakaus/agent-reviews/blob/5c85f14cad5d2233883f991faf9312ddc807c063/README.md"
+              },
+              {
+                "path": "lib/checks.js",
+                "url": "https://github.com/pbakaus/agent-reviews/blob/5c85f14cad5d2233883f991faf9312ddc807c063/lib/checks.js"
+              },
+              {
+                "path": "test/checks.test.js",
+                "url": "https://github.com/pbakaus/agent-reviews/blob/5c85f14cad5d2233883f991faf9312ddc807c063/test/checks.test.js"
+              },
+              {
+                "path": "skills/resolve-agent-reviews/SKILL.md",
+                "url": "https://github.com/pbakaus/agent-reviews/blob/5c85f14cad5d2233883f991faf9312ddc807c063/skills/resolve-agent-reviews/SKILL.md"
+              }
+            ]
+          },
+          {
+            "name": "pbakaus/impeccable",
+            "fork": false,
+            "archived": false,
+            "commit": "5ffe90b8403424a0888e0575bc1fb90517c7af74",
+            "head_commit_date": "2026-11-14T05:04:47Z",
+            "last_push": "2026-11-14T05:12:21Z",
+            "licence": {
+              "declared": "Apache-2.0",
+              "evidence": "LICENSE inspected; README also acknowledges origins in Anthropic's frontend-design skill.",
+              "reuse": "Preserve applicable licence, notices and attribution; inspect installed hooks and command behaviour before adoption."
+            },
+            "sources": [
+              {
+                "path": "LICENSE",
+                "url": "https://github.com/pbakaus/impeccable/blob/5ffe90b8403424a0888e0575bc1fb90517c7af74/LICENSE"
+              },
+              {
+                "path": "README.md",
+                "url": "https://github.com/pbakaus/impeccable/blob/5ffe90b8403424a0888e0575bc1fb90517c7af74/README.md"
+              }
+            ]
+          },
+          {
+            "name": "pbakaus/radiant",
+            "fork": false,
+            "archived": false,
+            "commit": "59e9f48c0ad9a3db2fbeb8898b4390d5a1eabb40",
+            "head_commit_date": "2026-09-10T23:16:27Z",
+            "last_push": "2026-09-10T23:18:16Z",
+            "licence": {
+              "declared": "MIT",
+              "evidence": "Full LICENSE inspected.",
+              "reuse": "Retain copyright and permission notice. README's optional public attribution statement does not remove the licence notice requirement."
+            },
+            "sources": [
+              {
+                "path": "LICENSE",
+                "url": "https://github.com/pbakaus/radiant/blob/59e9f48c0ad9a3db2fbeb8898b4390d5a1eabb40/LICENSE"
+              },
+              {
+                "path": "README.md",
+                "url": "https://github.com/pbakaus/radiant/blob/59e9f48c0ad9a3db2fbeb8898b4390d5a1eabb40/README.md"
+              }
+            ]
+          }
+        ],
+        "evidence": [
+          {
+            "fact": "agent-reviews evaluates checks for the PR head SHA, follows new pushes, checks the head again before a final verdict and distinguishes conflict, missing expected checks, timeout and no registered checks. Tests cover those cases.",
+            "sources": [
+              "https://github.com/pbakaus/agent-reviews/blob/5c85f14cad5d2233883f991faf9312ddc807c063/lib/checks.js",
+              "https://github.com/pbakaus/agent-reviews/blob/5c85f14cad5d2233883f991faf9312ddc807c063/test/checks.test.js"
+            ],
+            "application": "Bind an Atlas review receipt to the exact commit and declared required checks; a stale green result or absent CI must not imply merge readiness."
+          },
+          {
+            "fact": "The reviewed bot workflow re-fetches discussion detail before replying and stops after a second round when new findings repeatedly land on lines changed by its earlier fixes.",
+            "source": "https://github.com/pbakaus/agent-reviews/blob/5c85f14cad5d2233883f991faf9312ddc807c063/skills/resolve-agent-reviews/SKILL.md",
+            "application": "Use durable finding IDs, fresh observations and a bounded nonconvergence rule. Public replies remain separately authorized; this audit adopts no external skill instructions."
+          },
+          {
+            "fact": "Impeccable separates product context, design context, targeted critique/audit and deterministic detector output. The README distinguishes source-only scans from rendered-page checks.",
+            "source": "https://github.com/pbakaus/impeccable/blob/5ffe90b8403424a0888e0575bc1fb90517c7af74/README.md",
+            "application": "Attach product-purpose and platform constraints to Atlas UI reviews; report whether evidence came from source or an actual rendered page."
+          },
+          {
+            "fact": "Radiant's README describes self-contained HTML effects with parameters, visibility-based pause and device-pixel-ratio limits.",
+            "source": "https://github.com/pbakaus/radiant/blob/59e9f48c0ad9a3db2fbeb8898b4390d5a1eabb40/README.md",
+            "application": "Prefer optional, isolated visual examples with a measured rendering budget. Claims about all effects and frame rate were not independently tested."
+          }
+        ],
+        "strongest_trial": {
+          "status": "proposed",
+          "name": "Commit-bound review receipt replay",
+          "target": "Existing Atlas Maintenance 50 review workflow and Opsbook fixtures",
+          "scope": "Use local mocked PR/check snapshots to produce ready, failed, pending, missing-check, changed-head and nonconvergent outcomes. Begin without network access or automatic posting/merging.",
+          "acceptance": "A push invalidates the old receipt; an absent required check and an empty check list cannot pass; repeated regressions on previously edited lines stop within the declared round budget.",
+          "policy_difference": "Upstream code classifies neutral checks as passing and skipped checks separately. Atlas must define its required-check policy explicitly instead of inheriting those defaults silently."
+        },
+        "integration_constraints": [
+          "Current Impeccable README documents a live-copy fallback that launches Codex/Claude with approval/sandbox restrictions bypassed when no chat agent is polling. It also documents hooks that run outside model approval and may download an engine. Nothing was installed or executed; do not inherit these defaults.",
+          "agent-reviews can post replies and resolve threads. Audit evidence and proposed local replay do not authorize those external actions.",
+          "Pushed-at for agent-reviews is 2026-11-14, but the inspected default-branch head commit is dated 2026-10-15. Both dates are retained rather than conflated."
+        ],
+        "limits": "Source and tests were inspected, not executed. No general performance, security or superiority claim is established."
+      }
+    },
+    {
+      "handle": "poteto",
+      "profile_url": "https://github.com/poteto",
+      "new_trial_status": "proposed_only",
+      "existing_integration": "Pinned pstack in Atlas Opsbook; no additional integration or lock update",
+      "evidence": {
+        "profile": "poteto",
+        "name": "Lauren Tan",
+        "url": "https://github.com/poteto",
+        "checked_on": "2026-11-14",
+        "method": "Read-only GitHub connector audit of repository metadata, default-branch heads, selected README/licence/source files and exact Git trees; public profile opened through web search. Local Atlas Opsbook upstream.lock.json, README and docs/PSTACK.md inspected. No installs or runtime tests.",
+        "profile_pins_observed": [
+          "poteto/hiring-without-whiteboards",
+          "react/react",
+          "reactjs/react.dev",
+          "react/react-native",
+          "cursor/plugins"
+        ],
+        "domains": [
+          "React/compiler engineering and ecosystem contributions",
+          "Agent engineering workflows and verification",
+          "Persistent project memory",
+          "Agent orchestration",
+          "Practical hiring-process curation"
+        ],
+        "repositories": [
+          {
+            "repository": "poteto/hiring-without-whiteboards",
+            "url": "https://github.com/poteto/hiring-without-whiteboards",
+            "fork": false,
+            "parent": null,
+            "archived": false,
+            "description": "⭐️  Companies that don't have a broken hiring process",
+            "default_branch": "main",
+            "pushed_at": "2026-09-24T04:48:39Z",
+            "github_detected_licence": "MIT",
+            "head": {
+              "sha": "9b60360e04f354a82d942e56e64df4398058e914",
+              "committed_at": "2026-09-24T04:48:39Z",
+              "url": "https://github.com/poteto/hiring-without-whiteboards/commit/9b60360e04f354a82d942e56e64df4398058e914"
+            },
+            "licence_evidence": "MIT verified in LICENSE.md, copyright 2017 Lauren Elizabeth Tan.",
+            "provenance": "Non-fork maintained community list; contributions by many people must not be described as sole-authored.",
+            "sources": [
+              "https://github.com/poteto/hiring-without-whiteboards/blob/9b60360e04f354a82d942e56e64df4398058e914/README.md",
+              "https://github.com/poteto/hiring-without-whiteboards/blob/9b60360e04f354a82d942e56e64df4398058e914/CONTRIBUTING.md",
+              "https://github.com/poteto/hiring-without-whiteboards/blob/9b60360e04f354a82d942e56e64df4398058e914/LICENSE.md"
+            ]
+          },
+          {
+            "repository": "poteto/how",
+            "url": "https://github.com/poteto/how",
+            "fork": false,
+            "parent": null,
+            "archived": false,
+            "description": "skill for explaining architecture",
+            "default_branch": "main",
+            "pushed_at": "2026-04-14T22:14:28Z",
+            "github_detected_licence": "MIT",
+            "head": {
+              "sha": "b1ef42969ea7a2bb50aa26c2480274828a0385e7",
+              "committed_at": "2026-04-14T22:14:27Z",
+              "url": "https://github.com/poteto/how/commit/b1ef42969ea7a2bb50aa26c2480274828a0385e7"
+            },
+            "licence_evidence": "MIT LICENSE verified at HEAD.",
+            "provenance": "Non-fork architecture explanation/critique skill; the already-integrated pstack also has a how skill.",
+            "sources": [
+              "https://github.com/poteto/how/blob/b1ef42969ea7a2bb50aa26c2480274828a0385e7/README.md",
+              "https://github.com/poteto/how/blob/b1ef42969ea7a2bb50aa26c2480274828a0385e7/LICENSE"
+            ]
+          },
+          {
+            "repository": "poteto/brainmaxxing",
+            "url": "https://github.com/poteto/brainmaxxing",
+            "fork": false,
+            "parent": null,
+            "archived": false,
+            "description": "stupid simple persistent memory and skill improvement",
+            "default_branch": "main",
+            "pushed_at": "2026-02-27T19:47:29Z",
+            "github_detected_licence": "MIT",
+            "head": {
+              "sha": "ec4d8e43dee639d6f5d94aed3ca16af7b298ecfc",
+              "committed_at": "2026-02-27T19:47:24Z",
+              "url": "https://github.com/poteto/brainmaxxing/commit/ec4d8e43dee639d6f5d94aed3ca16af7b298ecfc"
+            },
+            "licence_evidence": "MIT LICENSE verified at HEAD.",
+            "provenance": "Non-fork persistent Markdown memory and reflection workflow. Its concern substantially overlaps existing Atlas Opsbook, so do not add a competing memory system.",
+            "sources": [
+              "https://github.com/poteto/brainmaxxing/blob/ec4d8e43dee639d6f5d94aed3ca16af7b298ecfc/README.md",
+              "https://github.com/poteto/brainmaxxing/blob/ec4d8e43dee639d6f5d94aed3ca16af7b298ecfc/LICENSE"
+            ]
+          },
+          {
+            "repository": "poteto/noodle",
+            "url": "https://github.com/poteto/noodle",
+            "fork": false,
+            "parent": null,
+            "archived": false,
+            "description": "Orchestrate agents using skills",
+            "default_branch": "main",
+            "pushed_at": "2026-03-19T07:46:39Z",
+            "github_detected_licence": "MIT",
+            "head": {
+              "sha": "82d2921c52370f23f29086de81ccfb600939c037",
+              "committed_at": "2026-03-19T07:41:03Z",
+              "url": "https://github.com/poteto/noodle/commit/82d2921c52370f23f29086de81ccfb600939c037"
+            },
+            "licence_evidence": "MIT LICENSE verified at HEAD.",
+            "provenance": "Non-fork Go agent orchestrator. README points to noodle-run.github.io documentation. No new orchestrator installation is recommended for Atlas.",
+            "sources": [
+              "https://github.com/poteto/noodle/blob/82d2921c52370f23f29086de81ccfb600939c037/README.md",
+              "https://github.com/poteto/noodle/blob/82d2921c52370f23f29086de81ccfb600939c037/LICENSE"
+            ]
+          },
+          {
+            "repository": "poteto/verification-skill-example",
+            "url": "https://github.com/poteto/verification-skill-example",
+            "fork": false,
+            "parent": null,
+            "archived": false,
+            "description": "Example: project-local verification skill + large-app feature map (fictional Atlas / Harbor Labs)",
+            "default_branch": "main",
+            "pushed_at": "2026-07-30T20:07:51Z",
+            "github_detected_licence": null,
+            "head": {
+              "sha": "d5abe70d0d8c671672b6cef4069363f26c488feb",
+              "committed_at": "2026-07-30T20:07:46Z",
+              "url": "https://github.com/poteto/verification-skill-example/commit/d5abe70d0d8c671672b6cef4069363f26c488feb"
+            },
+            "licence_evidence": "No GitHub-detected licence and no licence/notice path in complete recursive tree. Concepts and citations only; no copied text.",
+            "provenance": "README explicitly calls Atlas, Harbor Labs and control-atlas fictional. This is unrelated to Albertito-AI's Atlas ecosystem. Driver code is intentionally omitted.",
+            "sources": [
+              "https://github.com/poteto/verification-skill-example/blob/d5abe70d0d8c671672b6cef4069363f26c488feb/README.md"
+            ]
+          },
+          {
+            "repository": "poteto/plugins",
+            "url": "https://github.com/poteto/plugins",
+            "fork": true,
+            "parent": "cursor/plugins",
+            "archived": false,
+            "description": "Cursor plugin specification and official plugins",
+            "default_branch": "main",
+            "pushed_at": "2026-10-27T04:19:57Z",
+            "github_detected_licence": null,
+            "head": null,
+            "provenance": "Fork of cursor/plugins. Canonical pstack implementation is maintained under cursor/plugins/pstack, not a poteto/pstack repository.",
+            "sources": [
+              "https://api.github.com/repos/poteto/plugins"
+            ]
+          },
+          {
+            "repository": "poteto/react",
+            "url": "https://github.com/poteto/react",
+            "fork": true,
+            "parent": "react/react",
+            "archived": false,
+            "description": "The library for web and native user interfaces.",
+            "default_branch": "main",
+            "pushed_at": "2026-09-22T17:27:03Z",
+            "github_detected_licence": "MIT",
+            "head": null,
+            "provenance": "Fork of react/react. Do not credit the React project as Lauren's sole original project.",
+            "sources": [
+              "https://api.github.com/repos/poteto/react"
+            ]
+          }
+        ],
+        "pstack": {
+          "canonical_repository": "https://github.com/cursor/plugins",
+          "canonical_directory": "pstack",
+          "nonexistent_assumed_repository": {
+            "url": "https://github.com/poteto/pstack",
+            "observed_result": "GitHub connector returned repository 404 on 2026-11-14"
+          },
+          "author": "Lauren Tan",
+          "version": "0.15.36",
+          "licence": {
+            "spdx": "MIT",
+            "copyright": "Copyright (c) 2026 Lauren Tan",
+            "verified_file": "https://github.com/cursor/plugins/blob/3dbd22ff12742fb28c9700b9760baa29ed41dc13/pstack/LICENSE"
+          },
+          "locked_commit": "2776ddd2355d6d6c8747d3964600f28daf62f049",
+          "current_repository_head": {
+            "sha": "3dbd22ff12742fb28c9700b9760baa29ed41dc13",
+            "committed_at": "2026-11-13T22:43:34Z",
+            "message": "Merge pull request #1229 from cursor/add-runta-plugin; adds Runta plugin"
+          },
+          "locked_pstack_tree": "4719e1c4b4c43bac85d4206a8b41dd2899769c1c",
+          "current_pstack_tree": "4719e1c4b4c43bac85d4206a8b41dd2899769c1c",
+          "locked_generated_harness_pstack_tree": "a38155ce0250f234b4099fbb2dee456741ea5fb1",
+          "current_generated_harness_pstack_tree": "a38155ce0250f234b4099fbb2dee456741ea5fb1",
+          "pstack_trees_equal": true,
+          "generated_harness_pstack_trees_equal": true,
+          "inventory": {
+            "skills": 58,
+            "poteto_mode_playbooks": 23,
+            "agent_definitions": 2,
+            "automation_packs": 1,
+            "automation_names": [
+              "benny"
+            ]
+          },
+          "most_recent_path_commit": {
+            "sha": "c742dd61706fbacc1b95f1a20b7b988cf096ce6c",
+            "committed_at": "2026-10-27T23:12:40Z",
+            "author_login": "poteto",
+            "change": "Orchestrate became agentic, old orch scripts removed, version bumped to 0.15.36.",
+            "url": "https://github.com/cursor/plugins/commit/c742dd61706fbacc1b95f1a20b7b988cf096ce6c"
+          },
+          "update_assessment": {
+            "update_justified": false,
+            "conclusion": "Retain the existing Atlas Opsbook lock. The marketplace repository head advanced, but both the original pstack and generated harness/pstack trees are byte-for-byte identical Git trees at the locked and current commits. Updating only for repository-head movement provides no pstack content change.",
+            "limitation": "This conclusion covers these two pstack directories. It does not establish equivalence of unrelated marketplace plugins or all root tooling.",
+            "duplication_avoidance": "Atlas Opsbook already catalogues and fetches the complete pinned pstack distribution. Do not fork, install or import a second copy merely because the profile was added to the audit."
+          },
+          "contribution": {
+            "invitation": "pstack README explicitly welcomes forks, improvements and PRs.",
+            "maintenance_requirement": "README requires running node scripts/generate-pstack-harness-trees.mjs at repository root after pstack changes and committing the generated copy; CI checks freshness.",
+            "proposed_route": "If Atlas exposes a reproducible pstack defect, prepare a focused correction with proof and regenerated harness trees against cursor/plugins. Do not submit an unsolicited duplicate integration or claim a PR exists.",
+            "sources": [
+              "https://github.com/cursor/plugins/blob/3dbd22ff12742fb28c9700b9760baa29ed41dc13/pstack/README.md",
+              "https://github.com/cursor/plugins/blob/3dbd22ff12742fb28c9700b9760baa29ed41dc13/pstack/plugin.json"
+            ]
+          },
+          "verification_sources": [
+            "https://api.github.com/repos/cursor/plugins/git/trees/2776ddd2355d6d6c8747d3964600f28daf62f049",
+            "https://api.github.com/repos/cursor/plugins/git/trees/3dbd22ff12742fb28c9700b9760baa29ed41dc13",
+            "https://api.github.com/repos/cursor/plugins/contents/harness?ref=2776ddd2355d6d6c8747d3964600f28daf62f049",
+            "https://api.github.com/repos/cursor/plugins/contents/harness?ref=3dbd22ff12742fb28c9700b9760baa29ed41dc13",
+            "https://api.github.com/repos/cursor/plugins/git/trees/4719e1c4b4c43bac85d4206a8b41dd2899769c1c?recursive=1"
+          ],
+          "locked_source_url": "https://github.com/cursor/plugins/tree/2776ddd2355d6d6c8747d3964600f28daf62f049/pstack"
+        },
+        "lessons": [
+          {
+            "pattern": "Explain architecture before critique and use bounded parallel exploration only for complex questions.",
+            "source": "https://github.com/poteto/how/blob/b1ef42969ea7a2bb50aa26c2480274828a0385e7/README.md",
+            "atlas_use": "Use the existing pstack how capability rather than adding another independent review framework."
+          },
+          {
+            "pattern": "Treat memory as maintained material: detect contradictions, prune stale entries and connect reflection to review.",
+            "source": "https://github.com/poteto/brainmaxxing/blob/ec4d8e43dee639d6f5d94aed3ca16af7b298ecfc/README.md",
+            "atlas_use": "Apply to Opsbook's existing propose/evaluate/promote/rollback cycle; retain its stronger testable rule and rollback boundaries."
+          },
+          {
+            "pattern": "Separate source/documentation drift, verification-harness gaps and actual product defects.",
+            "source": "https://github.com/cursor/plugins/blob/3dbd22ff12742fb28c9700b9760baa29ed41dc13/pstack/skills/maintain-verification-skill/SKILL.md",
+            "atlas_use": "Maintenance should report clean, changed or blocked with coverage; avoid rewriting a feature map to conceal a product regression."
+          },
+          {
+            "pattern": "Compare scoped content identities before changing a dependency pin.",
+            "source": "https://api.github.com/repos/cursor/plugins/git/trees/3dbd22ff12742fb28c9700b9760baa29ed41dc13",
+            "atlas_use": "The verified pstack subtree equality avoids an unnecessary integration or lock update."
+          }
+        ],
+        "bounded_atlas_use": {
+          "name": "Verify existing Opsbook behaviours with the already-integrated pstack maintenance workflow",
+          "status": "proposal_only",
+          "scope": "One original, concise behaviour map for existing brief, propose, evaluate, promote and rollback CLI flows; exercise success, rejection and rollback against local temporary fixtures. Record source evidence and actual output, and distinguish documentation drift from product defects.",
+          "existing_integration": "Use pinned pstack create/maintain-verification principles and the present Opsbook CLI/test suite; no separate Noodle orchestration or Brainmaxxing memory installation.",
+          "cost": "No paid calls, accounts, new services or external state needed for CLI fixture checks.",
+          "acceptance": [
+            "Every mapped existing behaviour has a deterministic local recipe and expected outcome.",
+            "A rejected rule never becomes active.",
+            "Rollback restores the prior accepted manual.",
+            "Evidence survives fixture cleanup.",
+            "Unverified behaviours remain explicitly unverified."
+          ]
+        },
+        "limitations": [
+          "Representative repository audit, not a full security or correctness certification.",
+          "No upstream project code was executed, and no claim is made that all 58 skills or host integrations have run.",
+          "Repository fork=false does not prove sole authorship.",
+          "No upstream posts, forks, pull requests, installations or lock changes were made.",
+          "The only new file is this requested audit report."
+        ]
+      }
+    }
+  ]
+}
