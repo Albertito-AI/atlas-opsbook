@@ -33,8 +33,17 @@ Live Cursor and Claude sessions, model judgement across unseen repositories, ope
 
 The 0.1.1 packer reconstructs the two original Git trees from the combined ZIP and checks their hashes. A regression fixture tests both an executable and a symlink. See the [release incident](../examples/launch-lesson/README.md).
 
+## Current-source maintenance exercise, 14 November 2026
+
+The current-source suite passes 137 tests, including 33 independent execution-ticket tests. The new tests exercise three eight-process claim races, an actual process exit during an uncommitted transaction, bounded retries, clock recovery and uncertain external effects. Review found and corrected a stale-reconciliation race: recovery evidence must identify the exact current attempt's fence. Both stale `applied` and stale `not_applied` decisions are rejected by the regression tests.
+
+The separate `python3 examples/execution_queue_trial.py --contenders 50` exercise started fifty synthetic local processes sharing one SQLite database. Six received distinct claims, forty-four received none and no external action occurred. The recovery fixture blocked an automatic retry after effect-start, accepted explicit synthetic reconciliation and rejected the obsolete worker's completion. The default twelve-process exercise also passed.
+
+These observations concern the [local component](EXECUTION_QUEUE.md) and synthetic fixtures. They do not demonstrate a deployed agent fleet, remote exactly-once effects, production throughput or a completed coordinator adapter. CI repeats the full suite and the default contention exercise. This entry describes current source, not a replacement of the previously published 0.1.1 archive.
+
 ## Published download check
 
 On 6 November 2026 the publishing agent downloaded the ZIP and checksum from the public v0.1.1 release page. The ZIP matched SHA-256 `c17c3b4d43074c362a3728c85fe6c4ab42012f22f0ed70dea9dc07ae4397a5bf`. Reconstructing the pstack tree from the downloaded bytes returned `4719e1c4b4c43bac85d4206a8b41dd2899769c1c`. The Claude adapter returned `a38155ce0250f234b4099fbb2dee456741ea5fb1`. All 17 tests passed in the extracted distribution, and the extracted pull-request watcher had its executable bit.
 
 ![The learned rule handles all four synthetic exam cases in the deployed casebook](casebook.jpg)
+

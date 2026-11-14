@@ -22,6 +22,7 @@ jobs:
       - run: python3 examples/package_trial.py
       - run: python3 examples/decision_context_trial.py
       - run: python3 examples/reconstruction_trial.py
+      - run: python3 examples/execution_queue_trial.py
       - name: Fetch the pinned pstack distribution and verify its complete catalogue
         run: |
           python3 pstack.py fetch
