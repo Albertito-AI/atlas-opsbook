@@ -19,6 +19,22 @@ The first command after cloning runs an offline teaching exercise. A draft requi
 
 The second exercise builds a deliberately broken Python archive. The empty manual lets it through. The learned manual invokes a real isolated Python import, which fails on the broken archive and passes after the module is restored. Both exercises use temporary directories and need no account or model key.
 
+## Inspect the evidence before learning a rule
+
+Three optional, offline tools help prepare an incident or review:
+
+| Tool | Use |
+| --- | --- |
+| [Decision context](docs/DECISION_CONTEXT.md) | Select explicitly accepted decisions by scope and detect stale source text. |
+| [Artifact integrity](docs/ARTIFACT_INTEGRITY.md) | Verify expected lengths and SHA256 hashes of listed files; requires POSIX. |
+| [Incident timeline](docs/INCIDENT_TIMELINE.md) | Combine supplied JSONL observations, normalise known timestamps and retain undated evidence. |
+
+Try the original 150-decision exercise with `python3 examples/decision_context_trial.py`. It checks a small selected context and six deliberate failure cases. These tools use the standard library and do not execute their inputs or promote rules. Their guides specify what the evidence can and cannot establish.
+
+The [ecosystem learning review](docs/ECOSYSTEM_SYNTHESIS.md) records inspected upstream revisions, attribution, licence boundaries, implemented features and proposed experiments.
+
+For a practical reverse-engineering lesson, run `python3 examples/reconstruction_trial.py`. The [reconstruction guide](docs/RECONSTRUCTION.md) explains competing hypotheses, held-out probes and source-bound evidence using an original local toy target.
+
 ## Give an agent its own manual
 
 ```sh
@@ -54,3 +70,4 @@ The publishing agent found that a valid ZIP had lost the executable bits on orig
 Version **0.1.1**, public alpha. Run `python3 -m unittest discover -s tests -v` for local regression tests. The [verification record](docs/VERIFICATION.md) separates software results, illustrative cases and open research questions. A comparative productivity or model-quality multiplier would require matched live-agent trials.
 
 Original Opsbook code is released under the [MIT licence](LICENSE). The separately fetched pstack distribution retains Lauren Tan's upstream licence and attribution.
+

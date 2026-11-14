@@ -20,6 +20,8 @@ jobs:
           persist-credentials: false
       - run: python3 -m unittest discover -s tests -v
       - run: python3 examples/package_trial.py
+      - run: python3 examples/decision_context_trial.py
+      - run: python3 examples/reconstruction_trial.py
       - name: Fetch the pinned pstack distribution and verify its complete catalogue
         run: |
           python3 pstack.py fetch
@@ -51,3 +53,4 @@ jobs:
           GH_TOKEN: ${{ github.token }}
           TAG: ${{ github.event.release.tag_name }}
         run: gh release upload "$TAG" --repo "$GITHUB_REPOSITORY" atlas-opsbook-with-pstack.zip SHA256SUMS --clobber
+

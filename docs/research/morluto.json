@@ -1,0 +1,390 @@
+{
+  "schema": "atlas.profile.audit.v1",
+  "profile": "https://github.com/morluto",
+  "checked_at": "2026-11-14",
+  "scope": "Representative read-only public-source audit; upstream programs and tests were inspected, not installed or executed.",
+  "assessment": "The transferable strength is disciplined reconstruction with explicit claims, comparable observations, source-bound proof and visible unknowns. The project title Reverse Engineer Anything is not evidence of universal reconstruction capability.",
+  "repositories": [
+    {
+      "repo": "morluto/rea",
+      "fork": false,
+      "license": "MIT",
+      "archived": false,
+      "pushed_at": "2026-11-14T05:22:24Z",
+      "branch": "main",
+      "pin": "69386962569de27a1201847bf50a8c9ea592c5bd",
+      "commit_date": "2026-11-14T05:21:13Z",
+      "description": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+      "classification": "Not marked as a GitHub fork; not a claim of sole authorship",
+      "verified_license": "MIT for REA-authored code; third-party and external-tool terms remain separate",
+      "metadata_url": "https://api.github.com/repos/morluto/rea",
+      "commit_url": "https://github.com/morluto/rea/commit/69386962569de27a1201847bf50a8c9ea592c5bd"
+    },
+    {
+      "repo": "morluto/jacobian",
+      "fork": false,
+      "license": "MIT",
+      "archived": false,
+      "pushed_at": "2026-11-09T09:49:32Z",
+      "branch": "main",
+      "pin": "f693b76a600f8ee0d95a4e429a53bb576e9aeac1",
+      "commit_date": "2026-11-06T17:44:58Z",
+      "description": "Composable mathematics tools for agents",
+      "classification": "Not marked as a GitHub fork; not a claim of sole authorship",
+      "verified_license": "MIT",
+      "metadata_url": "https://api.github.com/repos/morluto/jacobian",
+      "commit_url": "https://github.com/morluto/jacobian/commit/f693b76a600f8ee0d95a4e429a53bb576e9aeac1"
+    },
+    {
+      "repo": "morluto/flameox",
+      "fork": false,
+      "license": "MIT",
+      "archived": false,
+      "pushed_at": "2026-11-09T09:17:33Z",
+      "branch": "main",
+      "pin": "c7ea167bf51bf10da9bc17a9ffc1124f4166f32f",
+      "commit_date": "2026-10-11T12:55:21Z",
+      "description": "Runtime evidence that helps agents trace, profile, and burn down hotspots in application and native code, GPU kernels, and inference stacks.",
+      "classification": "Not marked as a GitHub fork; not a claim of sole authorship",
+      "verified_license": "MIT",
+      "metadata_url": "https://api.github.com/repos/morluto/flameox",
+      "commit_url": "https://github.com/morluto/flameox/commit/c7ea167bf51bf10da9bc17a9ffc1124f4166f32f"
+    },
+    {
+      "repo": "morluto/leantoken",
+      "fork": false,
+      "license": "Apache-2.0",
+      "archived": false,
+      "pushed_at": "2026-11-09T09:14:39Z",
+      "branch": "main",
+      "pin": "5cfab83047d4dc77b1b5826016bc75edcd9b4bc4",
+      "commit_date": "2026-10-17T05:59:38Z",
+      "description": "Code intelligence for agents: find the code that matters and keep your context window and tokens lean.",
+      "classification": "Not marked as a GitHub fork; not a claim of sole authorship",
+      "verified_license": "MIT OR Apache-2.0 (Cargo.toml and both license files)",
+      "metadata_url": "https://api.github.com/repos/morluto/leantoken",
+      "commit_url": "https://github.com/morluto/leantoken/commit/5cfab83047d4dc77b1b5826016bc75edcd9b4bc4"
+    },
+    {
+      "repo": "morluto/smokinggun",
+      "fork": false,
+      "license": "MIT",
+      "archived": false,
+      "pushed_at": "2026-10-12T18:47:23Z",
+      "branch": "main",
+      "pin": "cf3a3872a2638a68d2d123126f98dfa84c85643d",
+      "commit_date": "2026-08-29T18:25:43Z",
+      "description": "Help your agents find the smoking gun they're looking for. Optimization evidence for agents: find complexity hotspots.",
+      "classification": "Not marked as a GitHub fork; not a claim of sole authorship",
+      "verified_license": "MIT",
+      "metadata_url": "https://api.github.com/repos/morluto/smokinggun",
+      "commit_url": "https://github.com/morluto/smokinggun/commit/cf3a3872a2638a68d2d123126f98dfa84c85643d"
+    },
+    {
+      "repo": "morluto/gitcontribute",
+      "fork": false,
+      "license": "MIT",
+      "archived": false,
+      "pushed_at": "2026-09-14T05:14:49Z",
+      "branch": "main",
+      "pin": "2c719afc0b0ebd34e3fcf833076bdd82c4ac6443",
+      "commit_date": "2026-09-09T16:31:09Z",
+      "description": "Contribution research for agents: check repository guidance, related work, code context, and validation before writing a patch.",
+      "classification": "Not marked as a GitHub fork; not a claim of sole authorship",
+      "verified_license": "MIT",
+      "metadata_url": "https://api.github.com/repos/morluto/gitcontribute",
+      "commit_url": "https://github.com/morluto/gitcontribute/commit/2c719afc0b0ebd34e3fcf833076bdd82c4ac6443"
+    },
+    {
+      "repo": "morluto/awesome-reverse-engineering",
+      "fork": false,
+      "license": "CC0-1.0",
+      "archived": false,
+      "pushed_at": "2026-11-11T02:29:54Z",
+      "branch": "main",
+      "pin": "df6a2bdf15c565a7d60851e1710090d47b9a9fe4",
+      "commit_date": "2026-11-11T02:29:54Z",
+      "description": "Curated reverse-engineering tools and learning resources for binaries, apps, firmware, formats, and protocols.",
+      "classification": "Not marked as a GitHub fork; not a claim of sole authorship",
+      "verified_license": "CC0-1.0",
+      "metadata_url": "https://api.github.com/repos/morluto/awesome-reverse-engineering",
+      "commit_url": "https://github.com/morluto/awesome-reverse-engineering/commit/df6a2bdf15c565a7d60851e1710090d47b9a9fe4"
+    },
+    {
+      "repo": "morluto/erdos-81",
+      "fork": true,
+      "parent": "N0zoM1z0/erdos-81",
+      "license": null,
+      "archived": false,
+      "pushed_at": "2026-09-08T12:53:39Z",
+      "branch": "main",
+      "pin": "cbde8a0a0563372b23b1b39a44180d2c0fb02f44",
+      "commit_date": "2026-09-08T10:47:29Z",
+      "description": null,
+      "classification": "GitHub-marked fork",
+      "verified_license": "No GitHub-detected license; not cleared for source reuse",
+      "metadata_url": "https://api.github.com/repos/morluto/erdos-81",
+      "commit_url": "https://github.com/morluto/erdos-81/commit/cbde8a0a0563372b23b1b39a44180d2c0fb02f44"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "rea_obligations",
+      "sources": [
+        {
+          "url": "https://github.com/morluto/rea/blob/69386962569de27a1201847bf50a8c9ea592c5bd/docs/reference/reconstruction-obligation-ledgers.md",
+          "lines": "10-27, 283-423"
+        },
+        {
+          "url": "https://github.com/morluto/rea/blob/69386962569de27a1201847bf50a8c9ea592c5bd/src/application/ReconstructionObligationLedgerEvaluation.ts",
+          "lines": "55-116, 158-236"
+        }
+      ],
+      "finding": "The ledger distinguishes candidate, open, failed and verified reconstruction obligations. Required fixtures, owner bindings, verifier evidence, dependencies and residual unknowns contribute to closure. Zero obligations cannot establish closure.",
+      "verification": "Static source inspection only."
+    },
+    {
+      "id": "rea_exact_binding",
+      "sources": [
+        {
+          "url": "https://github.com/morluto/rea/blob/69386962569de27a1201847bf50a8c9ea592c5bd/src/application/ReconstructionObligationAuthority.ts",
+          "lines": "98-174"
+        },
+        {
+          "url": "https://github.com/morluto/rea/blob/69386962569de27a1201847bf50a8c9ea592c5bd/tests/fixtures/reconstructionProofApplicability.ts",
+          "lines": "33-151"
+        }
+      ],
+      "finding": "Proof qualification checks observed confidence, recognized predicate/operation and schema, then exact obligation ID, owner SHA-256, obligation revision and fixture/case or verifier/claim pair. A matching false outcome cannot be replaced by a separate passing outcome.",
+      "verification": "Read implementation and adversarial fixture definitions; did not execute."
+    },
+    {
+      "id": "rea_authority_boundaries",
+      "sources": [
+        {
+          "url": "https://github.com/morluto/rea/blob/69386962569de27a1201847bf50a8c9ea592c5bd/src/application/ReconstructionObligationLedger.closure.test.ts",
+          "lines": "82-138, 172-218, 283-309"
+        },
+        {
+          "url": "https://github.com/morluto/rea/blob/69386962569de27a1201847bf50a8c9ea592c5bd/src/application/ReconstructionObligationLedger.authority.test.ts",
+          "lines": "1-175"
+        }
+      ],
+      "finding": "Tests specify that unit evidence cannot close a packaged-process obligation; unknown timeout exit status cannot stand in for a negative or cancellation case; process authority needs a supported controlled capture. Such test intentions are not proof they currently pass."
+    },
+    {
+      "id": "rea_contribution_standard",
+      "sources": [
+        {
+          "url": "https://github.com/morluto/rea/blob/69386962569de27a1201847bf50a8c9ea592c5bd/CONTRIBUTING.md",
+          "lines": "3-11, 53-67, 74-112"
+        }
+      ],
+      "finding": "Focused contributions must justify review cost. Source-only findings and unrun checks must be labelled. AI assistance is welcomed with a responsible human owner, meaningful evidence and readiness declaration before requesting review."
+    },
+    {
+      "id": "rea_licensing",
+      "sources": [
+        {
+          "url": "https://github.com/morluto/rea/blob/69386962569de27a1201847bf50a8c9ea592c5bd/LICENSE",
+          "lines": "1-21"
+        },
+        {
+          "url": "https://github.com/morluto/rea/blob/69386962569de27a1201847bf50a8c9ea592c5bd/THIRD_PARTY_NOTICES.md",
+          "lines": "1-38, 53-68"
+        },
+        {
+          "url": "https://github.com/morluto/rea/blob/69386962569de27a1201847bf50a8c9ea592c5bd/licenses/README.md",
+          "lines": "29-69"
+        },
+        {
+          "url": "https://github.com/morluto/rea/blob/69386962569de27a1201847bf50a8c9ea592c5bd/README.md",
+          "lines": "457-492"
+        }
+      ],
+      "finding": "REA's MIT license covers its authored code; preserved third-party notices distinguish distributed artifacts from separately obtained tools. The project explicitly does not grant commercial-tool entitlements. It inventories known notice gaps rather than claiming complete legal verification."
+    },
+    {
+      "id": "flameox_bounded_observation",
+      "sources": [
+        {
+          "url": "https://github.com/morluto/flameox/blob/c7ea167bf51bf10da9bc17a9ffc1124f4166f32f/docs/storage-and-evidence.md",
+          "lines": "6-42, 64-103"
+        },
+        {
+          "url": "https://github.com/morluto/flameox/blob/c7ea167bf51bf10da9bc17a9ffc1124f4166f32f/src/flameox/evidence_models.py",
+          "lines": "109-152"
+        }
+      ],
+      "finding": "Console diagnostics track observed, retained and omitted bytes. Model validation enforces observed = retained + omitted and prevents an I/O failure from claiming complete streams. Preservation cannot recover discarded bytes."
+    },
+    {
+      "id": "flameox_schema_and_integrity",
+      "sources": [
+        {
+          "url": "https://github.com/morluto/flameox/blob/c7ea167bf51bf10da9bc17a9ffc1124f4166f32f/docs/storage-and-evidence.md",
+          "lines": "86-117"
+        },
+        {
+          "url": "https://github.com/morluto/flameox/blob/c7ea167bf51bf10da9bc17a9ffc1124f4166f32f/tests/test_evidence_contracts.py",
+          "lines": "175-239"
+        }
+      ],
+      "finding": "Content hashes and schema validity are separate checks. The test suite mutates source layout, recomputes a consistent evidence ID, and still expects invalid contained/materializable layouts to be rejected. Evidence publication stages complete validated data before rename."
+    },
+    {
+      "id": "smokinggun_missing_coverage",
+      "sources": [
+        {
+          "url": "https://github.com/morluto/smokinggun/blob/cf3a3872a2638a68d2d123126f98dfa84c85643d/src/scan/source-snapshot.ts",
+          "lines": "53-120"
+        },
+        {
+          "url": "https://github.com/morluto/smokinggun/blob/cf3a3872a2638a68d2d123126f98dfa84c85643d/src/scan/source-snapshot.test.ts",
+          "lines": "31-65"
+        }
+      ],
+      "finding": "Canonical acquisition order makes cumulative budgets deterministic. Snapshot identity includes omitted paths and reasons; invalid UTF-8 or a size limit cannot disappear into an apparently complete clean scan."
+    },
+    {
+      "id": "gitcontribute_freshness",
+      "sources": [
+        {
+          "url": "https://github.com/morluto/gitcontribute/blob/2c719afc0b0ebd34e3fcf833076bdd82c4ac6443/README.md",
+          "lines": "18-34, 104-153"
+        },
+        {
+          "url": "https://github.com/morluto/gitcontribute/blob/2c719afc0b0ebd34e3fcf833076bdd82c4ac6443/internal/app/evidence_freshness.go",
+          "lines": "13-61"
+        },
+        {
+          "url": "https://github.com/morluto/gitcontribute/blob/2c719afc0b0ebd34e3fcf833076bdd82c4ac6443/internal/app/evidence_freshness_test.go",
+          "lines": "15-110"
+        }
+      ],
+      "finding": "Research precedes patching and separates local drafts from GitHub writes. Source provenance records observation sequence and timestamps. Tests advance a source thread and expect earlier evidence to become stale; manual observations do not acquire false source freshness."
+    },
+    {
+      "id": "jacobian_independent_invariants",
+      "sources": [
+        {
+          "url": "https://github.com/morluto/jacobian/blob/f693b76a600f8ee0d95a4e429a53bb576e9aeac1/README.md",
+          "lines": "17-34, 77-91, 135-139"
+        },
+        {
+          "url": "https://github.com/morluto/jacobian/blob/f693b76a600f8ee0d95a4e429a53bb576e9aeac1/tests/dispatch/test_integer_output_handoffs.py",
+          "lines": "44-87"
+        }
+      ],
+      "finding": "Typed, bounded mathematical primitives distinguish exact results and uncertainty. Extended-GCD tests check both math.gcd and the independent Bezout equation; composition tests preserve consumer domain bounds. README identifies the package as pre-stable and limits its tested binary-install platform contract."
+    },
+    {
+      "id": "leantoken_bounded_context",
+      "sources": [
+        {
+          "url": "https://github.com/morluto/leantoken/blob/5cfab83047d4dc77b1b5826016bc75edcd9b4bc4/Cargo.toml",
+          "lines": "15-35"
+        },
+        {
+          "url": "https://github.com/morluto/leantoken/blob/5cfab83047d4dc77b1b5826016bc75edcd9b4bc4/examples/resolved_reference_oracle.rs",
+          "lines": "17-70"
+        }
+      ],
+      "finding": "The source declares MIT OR Apache-2.0 despite GitHub's single Apache label. Its bounded reference-oracle example pins a manifest and lockfile and caps source bytes, AST nodes, candidates and payload tokens. The entire 2,487-line example was not audited for correctness."
+    }
+  ],
+  "lessons": [
+    "Begin with a bounded question and explicit observation boundary; static structure does not establish runtime behaviour.",
+    "Freeze the target revision and capture inputs, outputs, failures and environment before forming a reconstruction claim.",
+    "Keep multiple hypotheses alive and use probes designed to separate them rather than accumulating only confirming examples.",
+    "Require positive, negative, malformed and relevant lifecycle cases for every declared obligation.",
+    "Bind results to exact implementation bytes and obligation revisions; re-run after either changes.",
+    "Use an independently written oracle or mathematical invariant where available, and keep held-out tests separate from discovery.",
+    "Make missing evidence, output truncation, unknown exits and omitted files machine-visible; absence of evidence is not a pass.",
+    "Assess semantics before performance. Profiles identify candidates, while improvement claims require representative workloads, paired comparison and a semantic oracle.",
+    "Inspect licences and embedded third-party notices separately; fork provenance and source reuse rights are distinct facts.",
+    "Research current maintainer guidance and competing work before contributing. Submit one reproducible, owned change instead of bulk speculative patches."
+  ],
+  "legitimate_methodology": [
+    {
+      "step": 1,
+      "action": "Choose an owned or expressly authorized local target and record the scope, version, inputs, allowed observation surfaces and completion criteria."
+    },
+    {
+      "step": 2,
+      "action": "Read public interfaces and permitted source first. Inventory formats, entrypoints, state and dependencies without running unfamiliar target code."
+    },
+    {
+      "step": 3,
+      "action": "Construct a behaviour table separating observations, inferences, competing hypotheses and unresolved questions."
+    },
+    {
+      "step": 4,
+      "action": "Design a small discriminating probe matrix: normal, boundary, malformed, repeated and ordering-sensitive cases; declare query and resource budgets."
+    },
+    {
+      "step": 5,
+      "action": "Observe only the approved target, preserving exact input/output bytes, errors, exit information where applicable, versions and capture completeness."
+    },
+    {
+      "step": 6,
+      "action": "Write an original candidate from the observed specification. Preserve attribution for ideas and licence notices for any separately authorized reused code."
+    },
+    {
+      "step": 7,
+      "action": "Compare on disjoint held-out cases and independent properties; deliberately mutate one behaviour to establish that the verifier detects failure."
+    },
+    {
+      "step": 8,
+      "action": "Bind the receipt to current implementation and requirement hashes. Report verified finite claims and residual unknowns, without claiming source identity or universal equivalence."
+    }
+  ],
+  "bounded_atlas_exercise": {
+    "title": "Offline reconstruction of a local text normalisation contract",
+    "status": "Implemented as an original function-level teaching example; 14 independent tests and the 6 discovery / 32 held-out trial passed locally.",
+    "host": "Atlas Opsbook examples/reconstruction_trial.py, tests/test_reconstruction_trial.py, docs/RECONSTRUCTION.md",
+    "scope": "Original local in-process function oracle; maximum 256 input bytes. Reconstruct trimming/collapse of ASCII whitespace and ASCII-only lowercasing while preserving non-ASCII Unicode; record explicit malformed UTF-8, embedded NUL, empty-result and excessive-length outcomes.",
+    "hypotheses": [
+      "Unicode whitespace plus casefold",
+      "ASCII whitespace plus Unicode lowercasing",
+      "ASCII whitespace plus ASCII lowercasing"
+    ],
+    "discriminating_probes": [
+      "Straße versus STRASSE",
+      "Turkish capital dotted İ",
+      "non-breaking spaces around ALPHA",
+      "tabs/newlines and boundary-length inputs"
+    ],
+    "verification": [
+      "Disjoint discovery and held-out cases",
+      "Independent decoded-string reference and byte-oriented candidate",
+      "Explicit invalid-input precedence",
+      "Evidence digest bound to module source SHA-256",
+      "Self-consistent stale implementation receipt rejected",
+      "Deliberately wrong Unicode-folding implementation detected"
+    ],
+    "cost": "Python standard library; no network, paid API, external executables or unknown package installation.",
+    "ecosystem_mapping": [
+      "Atlas Opsbook stores replayable receipts and finite claims.",
+      "Atlas Maintenance 50 separates observer, implementer and independent reviewer duties.",
+      "Atlas Open Mathematics supplies the broader habit of independently checkable invariants."
+    ],
+    "limits": "Passing finite probes does not prove global equivalence, recover original source, or establish packaged-process behaviour. The reference is visible in the teaching source; real training can withhold it from the learner."
+  },
+  "upstream_opportunity": {
+    "url": "https://github.com/morluto/rea/issues/8475",
+    "title": "[RFC] Benchmark oracle adapter: expose rea_verify_reconstruction for AgentRE-Bench / SRE-Bench task packs",
+    "state": "open",
+    "updated_at": "2026-11-11T13:33:21Z",
+    "assessment": "An existing open RFC already proposes finite benchmark-oracle adapters. Treat this as related work to coordinate with; it is not evidence the adapter exists, a maintainer invitation to duplicate it, or authorization to post. No issue or PR was created."
+  },
+  "limitations": [
+    "Eight representative repositories were inspected, not all 263 profile repositories; this is not a whole-account security or quality audit.",
+    "GitHub non-fork metadata does not establish sole authorship or that every embedded component shares the root licence.",
+    "Push timestamps include branch activity and do not prove a default-branch release, passing CI or ongoing support; commit dates and exact pins are separately recorded.",
+    "REA's owner digest is supplied by the proof producer and compared; the ledger does not independently recompute the producer's implementation commitment. Its integrity model is not an external authorship attestation.",
+    "The profile's claimed Erdos problem result was not independently verified. The pinned erdos-81 repository is a fork of N0zoM1z0/erdos-81 with no API-detected licence.",
+    "No upstream code, installer, external engine or upstream test was executed. All upstream code-level findings are static inspections.",
+    "No forks, merges, posts, installations, commercial purchases or third-party target probes were made."
+  ]
+}
