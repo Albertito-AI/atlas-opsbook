@@ -35,11 +35,13 @@ The 0.1.1 packer reconstructs the two original Git trees from the combined ZIP a
 
 ## Current-source maintenance exercise, 14 November 2026
 
-The current-source suite passes 137 tests, including 33 independent execution-ticket tests. The new tests exercise three eight-process claim races, an actual process exit during an uncommitted transaction, bounded retries, clock recovery and uncertain external effects. Review found and corrected a stale-reconciliation race: recovery evidence must identify the exact current attempt's fence. Both stale `applied` and stale `not_applied` decisions are rejected by the regression tests.
+The execution-queue integration at [26795b6](https://github.com/Albertito-AI/atlas-opsbook/commit/26795b60dd6e31068997b5d899a6aea20e8e540a) passed 137 tests, including 33 independent execution-ticket tests. Those tests exercise three eight-process claim races, an actual process exit during an uncommitted transaction, bounded retries, clock recovery and uncertain external effects. Review found and corrected a stale-reconciliation race: recovery evidence must identify the exact current attempt's fence. Both stale `applied` and stale `not_applied` decisions are rejected by the regression tests.
 
 The separate `python3 examples/execution_queue_trial.py --contenders 50` exercise started fifty synthetic local processes sharing one SQLite database. Six received distinct claims, forty-four received none and no external action occurred. The recovery fixture blocked an automatic retry after effect-start, accepted explicit synthetic reconciliation and rejected the obsolete worker's completion. The default twelve-process exercise also passed.
 
 These observations concern the [local component](EXECUTION_QUEUE.md) and synthetic fixtures. They do not demonstrate a deployed agent fleet, remote exactly-once effects, production throughput or a completed coordinator adapter. CI repeats the full suite and the default contention exercise. This entry describes current source, not a replacement of the previously published 0.1.1 archive.
+
+A subsequent evidence-boundary review adds seven queue regressions. They exercise exact 65,536-byte UTF-8 evidence and receipts, one-byte-oversized rejection without changing ownership or history, clearing a previous receipt on a fresh attempt while retaining its audit event, corrupted persisted clocks, and persistent regular-file database requirements. The queue suite now contains 40 tests. These checks strengthen the existing contract without changing production behaviour.
 
 ## Published download check
 
