@@ -48,6 +48,7 @@ if lease is not None:
 | `reap()` | Recover expired leases and return the changed ticket records. |
 | `reconcile(dispatch_id, *, expected_fence, decision, evidence, quiescent)` | Resolve the exact uncertain attempt using external evidence and old-attempt quiescence. |
 | `get(dispatch_id)` / `events(dispatch_id)` | Inspect the stored ticket or ordered transition evidence without reaping. |
+| `uncertain()` | Read unresolved effect tickets without claiming or reaping work. |
 
 Validation and coordination failures raise `QueueError`, a subclass of `ValueError`. An empty eligible queue returns `None`; lock contention is an error after a bounded five-second wait, not an empty-queue result. This component has no daemon or automatic retry loop.
 

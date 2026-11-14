@@ -380,6 +380,13 @@ class Queue:
         with self._transaction() as connection:
             return self._row(connection, dispatch_id)
 
+    def uncertain(self):
+        """Read all unresolved effects without claiming or reaping work."""
+        with self._transaction() as connection:
+            identifiers = [row[0] for row in connection.execute(
+                "SELECT dispatch_id FROM tickets WHERE state='uncertain' ORDER BY dispatch_id")]
+            return [self._row(connection, identifier) for identifier in identifiers]
+
     def events(self, dispatch_id):
         _identifier(dispatch_id, "dispatch ID")
         with self._transaction() as connection:

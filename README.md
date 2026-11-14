@@ -37,6 +37,13 @@ For a practical reverse-engineering lesson, run `python3 examples/reconstruction
 
 For a maintenance-recovery exercise on Linux, run `python3 examples/execution_queue_trial.py`. The [execution-ticket guide](docs/EXECUTION_QUEUE.md) explains a same-host SQLite queue with at most six occupied tickets, one external-action writer, expiring leases and explicit reconciliation of uncertain effects. Use `--contenders 50` to test fifty local processes competing for six claims. These are synthetic processes; the library does not launch agents, execute payloads or coordinate separate hosts.
 
+The optional [trusted-host adapter](docs/EXECUTION_ADAPTER.md) invokes an
+operator-supplied synchronous worker under exact assignment checks. Effectful
+work requires a durable canonical hold before invocation and an independently
+observed outcome plus quiescence before autonomous reconciliation. Its tests
+cover interrupted processes and lost acknowledgements. An actual Atlas
+coordinator or service binding remains separate.
+
 ## Give an agent its own manual
 
 ```sh
