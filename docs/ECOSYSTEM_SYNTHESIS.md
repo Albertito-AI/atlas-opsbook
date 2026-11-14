@@ -148,7 +148,7 @@ Apache-2.0 [paddle_ocr_engine at 38e51ac](https://github.com/nickliqian/paddle_o
 
 Apache-2.0 [PatchLoop at 03eb09b](https://github.com/ZhuLinsen/patchloop/blob/03eb09b2248b60be2205dee6db33e2a80f20aae6/autocode/agent/autocode_state_store.py) makes task claims, retries and recovery explicit. Its instance-local lock and JSON persistence do not demonstrate safe coordination across independent processes. Apache-2.0 [MiniAgent at 25d87da](https://github.com/ZhuLinsen/MiniAgent/blob/25d87daff9a789713cb4aa56b4b689a6ebcb48cb/miniagent/agent.py) bounds execution steps and records uncertain effects after interrupted non-read operations. Its policy checks are not an operating-system sandbox. These selected projects are non-forks; account copies of vLLM and LangChain are forks.
 
-**Proposed:** fake-tool state-machine tests for duplicate dispatch, stale claim owners, expired leases, invalid arguments and capped retries. Interrupted effects must remain uncertain. Connect resulting receipts to Opsbook and its incident timeline before considering broader worker deployment. No 50-agent concurrency guarantee follows from these examples.
+**Implemented:** an original [local execution-ticket queue](EXECUTION_QUEUE.md) uses SQLite transactions for same-host claims, increasing fencing values, bounded retries and uncertain-effect quarantine. Independent tests include real process contention and a process killed inside a transaction. The synthetic recovery exercise requires evidence and explicit old-attempt quiescence before retrying an uncertain effect. No upstream code was copied. An adapter to the authoritative maintenance coordinator and its incident records remains pending; the library does not launch agents or execute payloads, and local fencing cannot cancel a remote request.
 
 ### xahlee
 
@@ -194,7 +194,7 @@ MIT [REA at 6938696](https://github.com/morluto/rea/tree/69386962569de27a1201847
 6. Review the exact proposed commit, run the applicable checks and merge only with evidence. Keep rollback and failure reporting explicit.
 7. Return a focused bug report, test, documentation correction or useful discussion answer that respects upstream scope and contributor terms.
 
-The next highest-value experiments are a publication-evidence adapter, a job-result contract and a worker-ownership exercise. Mathematical and performance experiments need separate domain-specific validation. They are proposals, not completed integrations. More repositories and more agent roles do not by themselves establish greater capability.
+The next highest-value experiments are a publication-evidence adapter, a job-result contract and a coordinator adapter for the tested local worker-ownership exercise. Mathematical and performance experiments need separate domain-specific validation. These extensions are proposals, not completed integrations. More repositories and more agent roles do not by themselves establish greater capability.
 
 ## Community participation and achievements
 

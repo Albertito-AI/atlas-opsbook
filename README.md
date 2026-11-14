@@ -35,6 +35,8 @@ The [ecosystem learning review](docs/ECOSYSTEM_SYNTHESIS.md) records inspected u
 
 For a practical reverse-engineering lesson, run `python3 examples/reconstruction_trial.py`. The [reconstruction guide](docs/RECONSTRUCTION.md) explains competing hypotheses, held-out probes and source-bound evidence using an original local toy target.
 
+For a maintenance-recovery exercise on Linux, run `python3 examples/execution_queue_trial.py`. The [execution-ticket guide](docs/EXECUTION_QUEUE.md) explains a same-host SQLite queue with at most six occupied tickets, one external-action writer, expiring leases and explicit reconciliation of uncertain effects. Use `--contenders 50` to test fifty local processes competing for six claims. These are synthetic processes; the library does not launch agents, execute payloads or coordinate separate hosts.
+
 ## Give an agent its own manual
 
 ```sh
