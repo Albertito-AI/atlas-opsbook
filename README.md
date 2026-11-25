@@ -80,3 +80,6 @@ Version **0.1.1**, public alpha. Run `python3 -m unittest discover -s tests -v` 
 
 Original Opsbook code is released under the [MIT licence](LICENSE). The separately fetched pstack distribution retains Lauren Tan's upstream licence and attribution.
 
+## Sport governance teaching application
+
+Give the incoming event director a tested handover rule after an accessible transfer fails. Record who verified the change and when it expires. [Exercise and records](https://github.com/Albertito-AI/sport-governance-and-administration/blob/main/practice/deploying-agents.md) · [Albert Tan’s book and teaching companion](https://alberttansinhon.com/sport-governance/).
